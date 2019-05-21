@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/GlobalChildBackgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/layout_global_title" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dm_1520dp"
+        android:layout_height="@dimen/dm_650dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dm_150dp"
+        android:background="@drawable/bg_set"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/android_key_manager"
+            android:textSize="@dimen/dm_28sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permanent_hidden_toolbar_switch_settings"
+            android:textSize="@dimen/dm_18sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_back_prompt"
+            android:textSize="@dimen/dm_18sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <Button
+            android:id="@+id/bt_setting"
+            android:layout_width="@dimen/dm_150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textSize="@dimen/dm_24sp"
+            android:textColor="@color/white"
+            android:background="@color/deepskyblue"
+            android:layout_margin="@dimen/dm_20dp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

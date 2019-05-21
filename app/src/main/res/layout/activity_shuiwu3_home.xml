@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    style="@style/GlobalBackgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.csjbot.blackgaga.home.HomeActivity">
+
+
+    <include layout="@layout/layout_global_title" />
+
+    <include
+        android:id="@+id/chat_view"
+        layout="@layout/layout_global_chat_admin"
+        android:layout_width="560dp"
+        android:background="@drawable/chatview_admin_bg"
+        android:layout_height="780dp"
+        android:layout_marginLeft="@dimen/chat_view_margin_left"
+        android:layout_marginTop="200dp" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="780dp"
+        android:layout_alignTop="@+id/chat_view"
+        android:layout_marginEnd="@dimen/main_ctrl_view_margin_right"
+        android:layout_marginStart="60dp"
+        android:layout_toEndOf="@+id/chat_view"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:clickable="true"
+        android:src="@drawable/iv_left"
+        android:stateListAnimator="@anim/button_press"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="40dp"
+        android:clickable="true"
+        android:src="@drawable/iv_right"
+        android:stateListAnimator="@anim/button_press"
+        android:visibility="gone"/>
+</RelativeLayout>

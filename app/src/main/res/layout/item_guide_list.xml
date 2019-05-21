@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dm_8dp"
+    android:layout_marginBottom="@dimen/dm_8dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="20dp"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/tvGuideIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/navi_number_bg"
+        android:textColor="@color/orange"
+        android:text="1"/>
+    <TextView
+        android:id="@+id/tvGuideName"
+        style="@style/navi_set_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm_20dp"
+        android:text="研发部"/>
+</LinearLayout>

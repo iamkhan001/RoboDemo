@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/VerticalGlobalChildBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_global_title" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_work_content_height"
+            android:layout_below="@+id/title_view"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/vertical_content_maigin"
+            android:background="@drawable/bg_set"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/bt_chatview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chatview"
+                android:textSize="@dimen/dm_24sp"
+                android:textColor="@color/white"
+                android:background="@color/deepskyblue"
+                android:layout_margin="@dimen/dm_20dp"
+                android:padding="@dimen/dm_10dp"
+                />
+
+            <Button
+                android:id="@+id/bt_face_sync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/face_data_sync"
+                android:textSize="@dimen/dm_24sp"
+                android:textColor="@color/white"
+                android:background="@color/deepskyblue"
+                android:layout_margin="@dimen/dm_20dp"
+                android:padding="@dimen/dm_10dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    >
+    <!--<TextView-->
+    <!--android:id="@+id/setting_speed_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/dm_380dp"-->
+    <!--android:layout_marginTop="@dimen/dm_240dp"-->
+    <!--android:paddingLeft="@dimen/dm_5dp"-->
+    <!--android:paddingRight="@dimen/dm_5dp"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@drawable/set_title"-->
+    <!--android:text="@string/setting_voice"-->
+    <!--android:textSize="@dimen/dm_28px"-->
+    <!--android:textColor="@color/gray444444"/>-->
+
+
+</LinearLayout>

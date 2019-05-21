@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/GlobalChildBackgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.csjbot.blackgaga.feature.viphall.activity.XianYangVipHallActivity">
+
+    <include layout="@layout/layout_global_title" />
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dm_1520dp"
+        android:layout_height="@dimen/dm_650dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dm_130dp"
+        android:background="@drawable/bg_set"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/dm_300dp"
+            android:layout_height="@dimen/dm_500dp"
+            android:layout_marginLeft="@dimen/dm_50dp"
+            android:layout_marginTop="@dimen/dm_120dp"
+            android:background="@drawable/attr_slide_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/pb_xianyang_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy_xianyang_viphall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_500dp"
+            android:layout_marginRight="@dimen/dm_50dp"
+            android:layout_marginTop="@dimen/dm_120dp">
+
+            <WebView
+                android:id="@+id/web_xianyang_viphall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+            </WebView>
+
+            <ProgressBar
+                android:id="@+id/pb_xianyang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

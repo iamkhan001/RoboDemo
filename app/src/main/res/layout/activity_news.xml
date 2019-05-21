@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.csjbot.blackgaga.feature.news.NewsActivity"
+    style="@style/GlobalChildBackgroundImage">
+
+    <include layout="@layout/layout_global_title"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/dm_1006dp"
+        android:layout_height="@dimen/dm_600dp"
+        android:layout_marginTop="@dimen/dm_255dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/bg_set"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dm_24sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dm_30dp"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dm_30dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:id="@+id/iv_picture"
+                    android:layout_width="@dimen/dm_500dp"
+                    android:layout_height="@dimen/dm_400dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dm_18sp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

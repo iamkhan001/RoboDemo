@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.csjbot.blackgaga.TestActivity">
+
+        <Button
+            android:id="@+id/bt_speech_handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试语音处理框架" />
+
+        <Button
+            android:id="@+id/bt_open_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开视频流"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_close_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关闭视频流"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开底层通信连接" />
+
+        <Button
+            android:id="@+id/bt_disconnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="断开底层通信连接" />
+
+        <Button
+            android:id="@+id/bt_deny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="摇头动作" />
+
+        <Button
+            android:id="@+id/bt_nod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点头动作" />
+
+        <Button
+            android:id="@+id/bt_smile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微笑表情" />
+
+        <Button
+            android:id="@+id/bt_sadness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="悲伤表情" />
+
+        <Button
+            android:id="@+id/bt_surprised"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="惊讶表情" />
+
+        <Button
+            android:id="@+id/bt_angry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="生气表情" />
+
+        <Button
+            android:id="@+id/bt_start_speech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开启语音识别服务"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_stop_speech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="停止语音识别服务"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_start_isr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开启多次识别" />
+
+        <Button
+            android:id="@+id/bt_stop_isr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="停止多次识别" />
+
+        <Button
+            android:id="@+id/bt_open_face"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开人脸识别服务"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_close_face"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关闭人脸识别服务"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_get_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取当前位置" />
+
+        <Button
+            android:id="@+id/bt_turn_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="左转" />
+
+        <Button
+            android:id="@+id/bt_turn_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="右转" />
+
+        <Button
+            android:id="@+id/bt_forward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="前进" />
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="后退" />
+
+        <Button
+            android:id="@+id/bt_go_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="左走" />
+
+        <Button
+            android:id="@+id/bt_go_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="右走" />
+
+        <Button
+            android:id="@+id/bt_navi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="导航页面" />
+
+        <Button
+            android:id="@+id/bt_swing_arm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="摆动手臂" />
+
+        <Button
+            android:id="@+id/bt_dance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跳舞" />
+
+        <Button
+            android:id="@+id/bt_stop_dance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="停止跳舞" />
+
+        <Button
+            android:id="@+id/bt_go_take_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取号" />
+
+        <ImageView
+            android:id="@+id/iv_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/colorAccent"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_sn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取SN" />
+
+        <Button
+            android:id="@+id/bt_device"
+            android:text="获取设备信息"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_set_sn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

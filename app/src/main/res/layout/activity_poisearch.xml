@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/GlobalChildBackgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_view"
+        layout="@layout/layout_global_title" />
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+    <!--<ListView-->
+    <!--android:id="@+id/maplistView"-->
+    <!--android:overScrollMode="never"-->
+    <!--android:layout_width="@dimen/dm_800dp"-->
+    <!--android:layout_height="@dimen/dm_250sp"-->
+    <!--android:layout_below="@+id/ll_map"-->
+    <!--android:layout_centerHorizontal="true"/>-->
+
+    <LinearLayout
+        android:id="@+id/ll_map"
+        android:layout_width="1600dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dm_50dp"
+        android:layout_marginTop="@dimen/dm_50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/bt_food"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:text="@string/delic_food" />
+
+            <Button
+                android:id="@+id/bt_scenic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:text="@string/scenic" />
+
+            <Button
+                android:id="@+id/bt_hotel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:text="@string/hotel" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stay" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/city" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/find_in_city" />
+
+            <AutoCompleteTextView
+                android:id="@+id/searchkey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.88"
+                android:text="@string/search_key" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:onClick="searchButtonProcess"
+                android:padding="10dip"
+                android:text="@string/search" />
+
+            <Button
+                android:id="@+id/searchNearby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:background="#9c9c9c"
+                android:onClick="searchNearbyProcess"
+                android:padding="10dip"
+                android:text="@string/search_nearby" />
+
+            <Button
+                android:id="@+id/searchBound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:onClick="searchBoundProcess"
+                android:padding="10dip"
+                android:text="@string/search_bound" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_view">
+
+            <com.baidu.mapapi.map.TextureMapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+
+                android:id="@+id/iv_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="30dp"
+                android:onClick="mobile"
+                android:src="@drawable/wsdk_drawable_rg_ic_locate_car_point" />
+
+            <FrameLayout
+                android:layout_width="@dimen/dm_300dp"
+
+                android:layout_height="700dp"
+                android:layout_margin="@dimen/dm_30dp">
+
+                <EditText
+                    android:id="@+id/edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm_10dp"
+                    android:hint="搜索"
+                    android:textColor="#000000"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm_220dp"
+                    android:onClick="Process"
+                    android:text="确定"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/maplistView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never" />
+            </FrameLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

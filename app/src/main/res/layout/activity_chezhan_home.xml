@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root"
+                style="@style/GlobalBackgroundImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <include layout="@layout/layout_global_title"/>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dm_50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_view"
+        android:layout_centerVertical="true"
+       >
+
+        <RelativeLayout
+            android:id="@+id/rl_chezhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_marginRight="@dimen/dm_2dp"
+                android:stateListAnimator="@anim/button_press"
+                android:id="@+id/rl_consultation_chezhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/iv_about"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nav_yinhang"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dm_80dp"
+                    android:paddingLeft="@dimen/dm_90dp"
+                    android:text="@string/consultation_service"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dm_27sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:stateListAnimator="@anim/button_press"
+                android:id="@+id/rl_nav_chezhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_toRightOf="@+id/rl_consultation_chezhan"
+                android:background="@drawable/iv_navigation"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nav_yinhang"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dm_80dp"
+                    android:paddingLeft="@dimen/dm_90dp"
+                    android:text="@string/nav_vip"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dm_27sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/dm_20dp"
+                android:id="@+id/rl_product_chezhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:stateListAnimator="@anim/button_press"
+                android:layout_toRightOf="@+id/rl_nav_chezhan"
+                android:background="@drawable/iv_product"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nav_yinhang"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dm_80dp"
+                    android:paddingLeft="@dimen/dm_90dp"
+                    android:text="@string/product_introduction"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dm_27sp"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_chezhan"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dm_250dp"
+
+            android:layout_marginRight="@dimen/dm_250dp"
+            android:layout_marginTop="@dimen/dm_20dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:stateListAnimator="@anim/button_press"
+                android:id="@+id/rl_fun_chezhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:background="@drawable/iv_entertainment"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nav_yinhang"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dm_80dp"
+                    android:paddingLeft="@dimen/dm_90dp"
+                    android:text="@string/fun"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dm_27sp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:stateListAnimator="@anim/button_press"
+                android:id="@+id/rl_local_service_chezhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_toRightOf="@+id/rl_fun_chezhan"
+                android:background="@drawable/iv_peripheral_services"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nav_yinhang"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dm_80dp"
+                    android:paddingLeft="@dimen/dm_90dp"
+                    android:text="@string/local_service"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dm_27sp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

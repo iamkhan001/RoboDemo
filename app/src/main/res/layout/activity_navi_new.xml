@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/GlobalChildBackgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_global_title" />
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="wrap_content"
+        android:layout_height="585dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/navbg">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm_32dp">
+
+            <ImageView
+                android:id="@+id/iv_map"
+                android:layout_width="900dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/navi_default_map" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_map"
+                android:layout_marginLeft="@dimen/dm_40dp"
+                android:layout_marginTop="@dimen/dm_30dp"
+                android:background="@drawable/navi2_map_upload_btn"
+                android:paddingLeft="@dimen/dm_30dp"
+                android:text="@string/navi_upload_map"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_right_root"
+            android:layout_width="200dp"
+            android:layout_height="550dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/navi_right_bg">
+
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:layout_height="@dimen/dm_350dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/navi_right_new_bg">
+
+                <TextView
+                    android:id="@+id/tv_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="@dimen/dm_18sp"
+                    android:visibility="gone"
+                    tools:text="@string/check_place_go" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:layout_marginRight="@dimen/dm_10dp"
+                    android:layout_marginTop="@dimen/dm_20dp">
+
+                    <TextView
+                        android:id="@+id/tv_navi_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="@dimen/dm_20sp"
+                        tools:text="@string/finance_department" />
+
+                    <TextView
+                        android:id="@+id/tv_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_navi_name"
+                        android:textSize="@dimen/dm_18sp"
+                        tools:text="@string/arrived" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_cancel"
+                android:layout_width="@dimen/dm_180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:visibility="visible"
+                android:background="@drawable/navi_btn_cancel">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dm_16dp"
+                    android:background="@drawable/navi_cancel_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/cancel"
+                    android:textSize="@dimen/dm_16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_start"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/rl_cancel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dm_16dp"
+                android:background="@drawable/btn_start_guide">
+
+                <ImageView
+                    android:id="@+id/iv_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dm_16dp"
+                    android:background="@drawable/navi_start_icon" />
+
+                <TextView
+                    android:id="@+id/tv_goImm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/go_imm"
+                    android:textSize="@dimen/dm_16sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/iv_map_manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_root"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dm_16dp"
+        android:layout_marginRight="@dimen/dm_200dp"
+        android:background="@drawable/map_set"
+        android:gravity="center"
+        android:text="@string/manage_map" />
+
+    <ImageView
+        android:layout_width="1000dp"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/navi_default_map"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

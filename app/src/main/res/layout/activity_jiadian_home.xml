@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+                style="@style/GlobalChildBackgroundImage"
+    tools:context="com.csjbot.blackgaga.home.HomeActivity">
+
+    <include layout="@layout/layout_global_title"/>
+
+    <include layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm_650dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dm_150dp"
+        >
+        <skin.support.widget.SkinCompatTextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColorHint="@color/navi2_set_tab_color"
+            android:hint="@string/about_bot"
+            android:visibility="gone"/>
+        <ImageView
+            android:stateListAnimator="@anim/button_press"
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_65dp"
+            android:src="@drawable/iv_left"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            />
+        <ImageView
+            android:stateListAnimator="@anim/button_press"
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dm_65dp"
+            android:src="@drawable/iv_right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dm_1520dp"
+        android:layout_height="@dimen/dm_650dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dm_150dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

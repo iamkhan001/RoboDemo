@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/GlobalChildBackgroundImage"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_global_title" />
+
+    <LinearLayout
+        android:layout_width="1500dp"
+        android:layout_height="600dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:id="@+id/iv_detail"
+            android:layout_width="750dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="750dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/settings_virtualkey"
+            android:scaleType="fitXY"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

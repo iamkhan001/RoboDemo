@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/GlobalChildBackgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_global_title" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dm_1520dp"
+        android:layout_height="@dimen/dm_650dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dm_150dp"
+        android:background="@drawable/bg_set"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/ll_take_photo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/iv_preview"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="880dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="495dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/camera_loading" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/bt_take_photo"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_margin="@dimen/dm_20dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="@drawable/vipcenter_take_photo_btn_bg"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingLeft="@dimen/dm_70dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="@string/take_photo"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/vipcenter_btn_color"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="@dimen/dm_24sp" />&ndash;&gt;-->
+
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/ll_complete_and_retake"-->
+        <!--android:layout_width="@dimen/dm_600dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/dm_20dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:visibility="gone">-->
+
+        <!--<Button-->
+        <!--android:id="@+id/bt_complete"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/vipcenter_take_photo_ok_btn_bg"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/complete"-->
+        <!--android:textColor="@color/vipcenter_btn_color"-->
+        <!--android:textSize="@dimen/dm_24sp" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/bt_retake"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/dm_20dp"-->
+        <!--android:background="@drawable/vipcenter_take_photo_again_btn_bg"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="@dimen/dm_70dp"-->
+        <!--android:text="@string/retake_photo"-->
+        <!--android:textColor="@color/vipcenter_btn_color"-->
+        <!--android:textSize="@dimen/dm_24sp" />-->
+        <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:id="@+id/ll_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_preview_photo"
+                android:layout_width="@dimen/dm_450dp"
+                android:layout_height="@dimen/dm_260dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dm_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dm_10dp"
+                        android:text="@string/name"
+                        android:textColor="@color/gray666666"
+                        android:textSize="@dimen/dm_18sp" />
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit2_bg"
+                        android:hint="@string/input_name"
+                        android:inputType="textPersonName"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dm_10dp"
+                        android:paddingRight="@dimen/dm_10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dm_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dm_10dp"
+                        android:text="@string/gender"
+                        android:textColor="@color/gray666666"
+                        android:textSize="@dimen/dm_18sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/rb_man"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_man"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/man"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dm_18sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_woman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/woman"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dm_18sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dm_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dm_10dp"
+                        android:text="@string/company"
+                        android:textColor="@color/gray666666"
+                        android:textSize="@dimen/dm_18sp" />
+
+                    <EditText
+                        android:id="@+id/et_company"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit2_bg"
+                        android:hint="@string/input_company"
+                        android:inputType="text"
+                        android:maxLength="30"
+                        android:paddingLeft="@dimen/dm_10dp"
+                        android:paddingRight="@dimen/dm_10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dm_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dm_10dp"
+                        android:text="@string/phone"
+                        android:textColor="@color/gray666666"
+                        android:textSize="@dimen/dm_18sp" />
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit2_bg"
+                        android:hint="@string/input_phone"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dm_10dp"
+                        android:paddingRight="@dimen/dm_10dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/vipcenter_register_ok_btn_bg"
+                    android:text="@string/ok"
+                    android:textColor="@color/vipcenter_btn_color"
+                    android:textSize="@dimen/dm_20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_register_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vipcenter_member_register_success" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_success_speak_text"
+                android:textColor="@color/gray666666"
+                android:textSize="@dimen/dm_28sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="122dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:scaleType="fitXY" />
+
+            <Button
+                android:id="@+id/bt_take_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dm_300dp"
+                android:background="@drawable/vipcenter_take_photo_btn_bg"
+                android:paddingStart="@dimen/dm_60dp"
+                android:text="@string/take_photo"
+                android:textColor="@color/vipcenter_btn_color"
+                android:textSize="@dimen/dm_24sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_complete_and_retake"
+                android:layout_width="@dimen/dm_600dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dm_300dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/bt_complete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/vipcenter_take_photo_ok_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/complete"
+                    android:textColor="@color/vipcenter_btn_color"
+                    android:textSize="@dimen/dm_24sp" />
+
+                <Button
+                    android:id="@+id/bt_retake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dm_20dp"
+                    android:background="@drawable/vipcenter_take_photo_again_btn_bg"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/dm_70dp"
+                    android:text="@string/retake_photo"
+                    android:textColor="@color/vipcenter_btn_color"
+                    android:textSize="@dimen/dm_24sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

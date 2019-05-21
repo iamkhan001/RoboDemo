@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_detail_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/GlobalChildBackgroundImage">
+
+    <include
+        layout="@layout/layout_global_title"/>
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/skin_recycler_view"
+        android:layout_width="1500dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:scrollbars="none"
+        android:overScrollMode="never"/>
+</RelativeLayout>

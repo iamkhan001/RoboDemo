@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vertical_title_content"
+        style="@style/VerticalGlobalChildBackgroundImage"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_global_title" />
+
+        <RelativeLayout
+            android:layout_width="1500dp"
+            android:layout_height="@dimen/vertical_work_content_height"
+            android:layout_margin="@dimen/vertical_content_maigin"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_intro"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@color/lightgray" />
+
+            <TextView
+                android:id="@+id/tv_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_intro"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_18dp"
+                android:text="@string/about_us" />
+
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/wv_aboutus"
+            android:layout_below="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_content_height"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_marginRight="@dimen/dm_10dp"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/chat_view"
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="563dp"
+        android:visibility="invisible"/>
+</LinearLayout>

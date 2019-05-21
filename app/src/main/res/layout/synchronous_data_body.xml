@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.csjbot.blackgaga.widget.BubbleProgressBar
+            android:id="@+id/pb"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:max="100"
+            android:minHeight="36dp"
+            android:maxWidth="133dp"
+            android:layout_marginBottom="@dimen/dm_20dp"
+            android:progressDrawable="@drawable/bar_color"/>
+        <TextView
+            android:id="@+id/show_syc_error"
+            style="@style/promt_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dm_10dp"
+            android:gravity="center"
+            android:visibility="visible" />
+        <Button
+            android:id="@+id/syn"
+            style="@style/setting_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:stateListAnimator="@anim/button_press"
+            android:text="@string/synchronous_data" />
+    </LinearLayout>
+
+
+</LinearLayout>

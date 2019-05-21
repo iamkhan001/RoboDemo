@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/GlobalChildBackgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_global_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dm_40dp"
+        android:orientation="horizontal">
+
+        <include layout="@layout/layout_global_chat_admin" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dm_40dp"
+            android:background="@drawable/content_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_tab_data"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dm_20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm_60dp"
+                    app:tabBackground="@drawable/selector_bank_service_top"
+                    app:tabIndicatorColor="@android:color/transparent"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/content_top_select_color"
+                    app:tabTextAppearance="@style/bank_service_tab_textsize"
+                    app:tabTextColor="@color/content_top_unsel_color" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/content_right_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_recyclerview"
+                android:layout_width="@dimen/dm_200dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dm_20dp"
+                android:layout_marginEnd="@dimen/dm_20dp"
+                android:layout_marginTop="@dimen/dm_80dp"
+                android:background="@drawable/content_left_bg"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/pd_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dm_20dp"
+                    android:layout_marginTop="@dimen/dm_20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dm_40dp"
+                android:layout_marginRight="@dimen/dm_40dp"
+                android:layout_marginTop="@dimen/dm_40dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/no_data" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

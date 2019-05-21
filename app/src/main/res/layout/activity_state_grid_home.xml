@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/root"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              style="@style/GlobalBackgroundImage"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_global_title" />
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dm_50dp"
+            >
+            <ImageView
+                android:id="@+id/iv_navi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_navigation"
+                android:stateListAnimator="@anim/button_press"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_navi"
+                android:layout_marginTop="@dimen/dm_20dp"
+                android:gravity="center_vertical"
+                android:text="@string/nav_service"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dm_150dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_service_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_service_introduction"
+                android:stateListAnimator="@anim/button_press"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_service_introduction"
+                android:layout_marginTop="@dimen/dm_20dp"
+                android:gravity="center_vertical"
+                android:text="@string/service_introduce"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dm_200dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_power_consult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_query"
+                android:stateListAnimator="@anim/button_press"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_power_consult"
+                android:layout_marginTop="@dimen/dm_20dp"
+                android:gravity="center_vertical"
+                android:text="@string/power_consult"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dm_150dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_vipcenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_member_center"
+                android:stateListAnimator="@anim/button_press"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_vipcenter"
+                android:layout_marginTop="@dimen/dm_20dp"
+                android:gravity="center_vertical"
+                android:text="@string/vip_center"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dm_50dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_nearby_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_peripheral_services"
+                android:stateListAnimator="@anim/button_press"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_nearby_service"
+                android:layout_marginTop="@dimen/dm_20dp"
+                android:gravity="center_vertical"
+                android:text="@string/local_service"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

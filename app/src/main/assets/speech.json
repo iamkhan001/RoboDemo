@@ -1,0 +1,434 @@
+{
+  "childSpeeches": [
+    {
+      "contents": [
+        {
+          "action": "go",
+          "target": "VipCenterActivity",
+          "text": "会员中心"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "产品"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "有什么推荐"
+        },
+        {
+          "action": "go",
+          "target": "NaviActivity",
+          "text": "服务导航"
+        },
+        {
+          "action": "go",
+          "target": "NearByActivity",
+          "text": "展馆周边"
+        }
+      ],
+      "initText": "",
+      "page": "CSJBotHomeActivity"
+    },
+    {
+      "contents": [
+        {
+          "action": "go",
+          "target": "VipCenterActivity",
+          "text": "会员中心"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "产品"
+        },
+        {
+          "action": "go",
+          "target": "NaviActivity",
+          "text": "导航"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "有什么推荐"
+        },
+        {
+          "action": "go",
+          "target": "NearByActivity",
+          "text": "周边服务"
+        }
+      ],
+      "initText": "",
+      "page": "ShiPinHomeActivity"
+    },
+    {
+      "contents": [
+        {
+          "action": "go",
+          "target": "VipCenterActivity",
+          "text": "会员中心"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "产品"
+        },
+        {
+          "action": "go",
+          "target": "NaviActivity",
+          "text": "导航"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "有什么推荐"
+        },
+        {
+          "action": "go",
+          "target": "NearByActivity",
+          "text": "周边服务"
+        }
+      ],
+      "initText": "",
+      "page": "JiaDianHomeActivity"
+    },
+    {
+      "contents": [
+        {
+          "action": "go",
+          "target": "VipCenterActivity",
+          "text": "会员中心"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "产品"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "有什么推荐"
+        },
+        {
+          "action": "go",
+          "target": "NaviActivity",
+          "text": "导航"
+        },
+        {
+          "action": "go",
+          "target": "NearByActivity",
+          "text": "周边服务"
+        }
+      ],
+      "initText": "",
+      "page": "ShangShaHomeActivity"
+    },
+
+
+    {
+      "contents": [
+        {
+          "action": "go",
+          "target": "VipCenterActivity",
+          "text": "会员中心"
+        },
+        {
+          "action": "go",
+          "target": "NaviActivity",
+          "text": "导航"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "有什么推荐"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "产品介绍"
+        },
+        {
+          "action": "go",
+          "target": "NearByActivity",
+          "text": "周边服务"
+        }
+      ],
+      "initText": "",
+      "page": "YaoDianHomeActivity"
+    },
+
+    {
+      "contents": [
+        {
+          "action": "go",
+          "target": "NaviActivity",
+          "text": "导航"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "有什么推荐"
+        },
+        {
+          "action": "go",
+          "target": "EntertainmentActivity",
+          "text": "互动娱乐"
+        },
+        {
+          "action": "go",
+          "target": "NearByActivity",
+          "text": "周边服务"
+        }
+      ],
+      "initText": "",
+      "page": "ZhanGuanHomeActivity"
+    },
+
+    {
+      "contents": [
+        {
+          "action": "go",
+          "target": "NaviActivity",
+          "text": "为您指路"
+        },
+
+        {
+          "action": "go",
+          "target": "NearByActivity",
+          "text": "周边服务"
+        }
+      ],
+      "initText": "",
+      "page": "YiYuanHomeActivity"
+    },
+
+
+
+    {
+      "contents": [
+        {
+          "action": "go",
+          "target": "SearchActivity",
+          "text": "咨询服务"
+        },
+        {
+          "action": "go",
+          "target": "NaviActivity",
+          "text": "贵宾导航"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "有什么推荐"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "产品介绍"
+        },
+        {
+          "action": "go",
+          "target": "NearByActivity",
+          "text": "周边推荐"
+        }
+      ],
+      "initText": "",
+      "page": "JiChangHomeActivity"
+    },
+
+
+    {
+      "contents": [
+        {
+          "action": "go",
+          "target": "EntertainmentActivity",
+          "text": "互动娱乐"
+        },
+        {
+          "action": "go",
+          "target": "NaviActivity",
+          "text": "服务导航"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "有什么推荐"
+        },
+        {
+          "action": "go",
+          "target": "NearByActivity",
+          "text": "周边服务"
+        }
+      ],
+      "initText": "",
+      "page": "JiuDianHomeActivity"
+    },
+
+
+
+
+    {
+      "contents": [
+        {
+          "action": "go",
+          "target": "EntertainmentActivity",
+          "text": "娱乐"
+        },
+        {
+          "action": "go",
+          "target": "VipCenterActivity",
+          "text": "个人中心"
+        },
+        {
+          "action": "go",
+          "target": "NaviActivity",
+          "text": "导航"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "有什么推荐"
+        },
+        {
+          "action": "go",
+          "target": "NearByActivity",
+          "text": "周边服务"
+        }
+      ],
+      "initText": "",
+      "page": "YinHangHomeActivity"
+    },
+
+
+
+
+
+
+    {
+      "contents": [
+        {
+          "action": "go",
+          "target": "VipCenterActivity",
+          "text": "会员中心"
+        },
+        {
+          "action": "go",
+          "target": "NaviActivity",
+          "text": "导航"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "有什么推荐"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "产品介绍"
+        },
+        {
+          "action": "go",
+          "target": "NearByActivity",
+          "text": "周边服务"
+        }
+      ],
+      "initText": "",
+      "page": "FuZhuangHomeActivity"
+    },
+
+
+    {
+      "contents": [
+        {
+          "action": "go",
+          "target": "VipCenterActivity",
+          "text": "会员中心"
+        },
+        {
+          "action": "go",
+          "target": "NaviActivity",
+          "text": "导航"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "有什么推荐"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "商品查询"
+        },
+        {
+          "action": "go",
+          "target": "NearByActivity",
+          "text": "周边服务"
+        }
+      ],
+      "initText": "",
+      "page": "ChaoShiHomeActivity"
+    },
+
+
+    {
+      "contents": [
+        {
+          "action": "go",
+          "target": "VipCenterActivity",
+          "text": "会员中心"
+        },
+        {
+          "action": "go",
+          "target": "NaviActivity",
+          "text": "导航"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "有什么推荐"
+        },
+        {
+          "action": "go",
+          "target": "ProductListActivity",
+          "text": "产品介绍"
+        },
+        {
+          "action": "go",
+          "target": "NearByActivity",
+          "text": "周边服务"
+        }
+      ],
+      "initText": "",
+        "page": "QiCheHomeActivity"
+    },
+
+    {
+      "contents": [
+        {
+          "answerText": "我是美丽的机器人呀!",
+          "text": "你是谁呀!"
+        }
+      ],
+      "initText": "",
+      "page": "VipCenterActivity"
+    }
+  ],
+  "globalSpeech": {
+    "contents": [
+      {
+        "action": "back",
+        "text": "返回"
+      },
+      {
+        "action": "back",
+        "text": "退出"
+      },
+      {
+        "action": "go",
+        "target": "SettingsActivity",
+        "text": "设置"
+      }
+    ]
+  }
+}

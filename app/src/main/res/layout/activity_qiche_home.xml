@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/root"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              style="@style/GlobalBackgroundImage"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_global_title"/>
+
+    <GridLayout
+        android:layout_marginTop="@dimen/dm_20dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:layout_marginRight="@dimen/dm_10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3">
+
+        <RelativeLayout
+            android:id="@+id/nav_yaodian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dm_150dp"
+            android:layout_marginRight="@dimen/dm_40dp"
+            android:background="@drawable/iv_navigation"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_160dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/nav"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/product_yaodian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dm_40dp"
+            android:background="@drawable/iv_product"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_160dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/product_introduction"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/member_center_yaodian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_member_center"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_160dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/member_center"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/peripheral_services_yaodian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_peripheral_services"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_160dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/local_service"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/coupon_yaodian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_coupon"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_160dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/Coupon"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/entertainment_yaodian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_entertainment"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_160dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/fun"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+    </GridLayout>
+
+    <include
+
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</LinearLayout>

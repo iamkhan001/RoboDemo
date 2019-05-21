@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/GlobalChildBackgroundImage">
+
+    <include layout="@layout/layout_global_title"/>
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_50dp"
+            android:layout_marginRight="@dimen/dm_50dp">
+
+            <ImageView
+                android:id="@+id/iv_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ser_introduction"
+                android:stateListAnimator="@anim/button_press"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dm_280dp"
+                android:paddingRight="@dimen/dm_20dp"
+                android:text="@string/introduction"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm_30dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_50dp"
+            android:layout_marginRight="@dimen/dm_50dp">
+
+            <ImageView
+                android:id="@+id/iv_exhibition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ser_exhibition"
+                android:stateListAnimator="@anim/button_press"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dm_280dp"
+                android:paddingRight="@dimen/dm_20dp"
+                android:text="@string/exhibition"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm_30dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_50dp"
+            android:layout_marginRight="@dimen/dm_50dp">
+
+            <ImageView
+                android:id="@+id/iv_destine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ser_destine"
+                android:stateListAnimator="@anim/button_press"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dm_280dp"
+                android:paddingRight="@dimen/dm_20dp"
+                android:text="@string/destine"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm_30dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_50dp"
+            android:layout_marginRight="@dimen/dm_50dp">
+
+            <ImageView
+                android:id="@+id/iv_exhibition_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ser_news"
+                android:stateListAnimator="@anim/button_press"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dm_280dp"
+                android:paddingRight="@dimen/dm_20dp"
+                android:text="@string/exhibition_news"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm_30dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

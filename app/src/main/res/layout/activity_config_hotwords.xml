@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.csjbot.blackgaga.robot_test.ConfigHotwordActivity">
+
+    <EditText
+        android:id="@+id/edittextHotWords"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dm_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_0dp"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:text="请以半角逗号分隔，如   穿山甲,机器人,人民公社,厕所,卫生间"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_0dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:onClick="readAllLocation"
+            android:text="读取全部地点" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_0dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:onClick="clearAllHotWords"
+            android:text="清除所有热词" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_0dp"
+            android:layout_weight="1"
+            android:onClick="saveAllHotWords"
+            android:text="保存热词" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_0dp"
+            android:layout_weight="1"
+            android:onClick="goBack"
+            android:text="返回" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

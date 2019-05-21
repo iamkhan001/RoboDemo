@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/VerticalGlobalChildBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/title_view"
+            layout="@layout/layout_global_title" />
+        <RelativeLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_work_content_height"
+            android:layout_margin="@dimen/vertical_content_maigin"
+            android:layout_below="@+id/title_view"
+            android:background="@drawable/bg_set">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm_40dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chat_switch"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/dm_26dp"
+                        android:layout_marginRight="@dimen/dm_20dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/cb_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:button="@null"
+                        android:background="@drawable/checkbox_selector"
+                        android:padding="@dimen/dm_5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm_40dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/semantics_switch"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/dm_26dp"
+                        android:layout_marginRight="@dimen/dm_20dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/cb_semantics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:button="@null"
+                        android:background="@drawable/checkbox_selector"
+                        android:padding="@dimen/dm_5dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_vague_query_percentage"
+                        android:textSize="@dimen/dm_22dp"
+                        />
+                    <EditText
+                        android:id="@+id/et_score"
+                        android:layout_width="@dimen/dm_50dp"
+                        android:layout_height="wrap_content"
+                        android:text="0.9"
+                        android:maxLength="6"
+                        android:clickable="false"
+                        android:textSize="@dimen/dm_18dp"
+                        />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/bt_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ok"
+                    android:textSize="@dimen/dm_22sp"
+                    android:textColor="@color/white"
+                    android:background="@color/deepskyblue"
+                    android:layout_marginTop="@dimen/dm_50dp"
+                    />
+
+                <Button
+                    android:id="@+id/bt_unknown_problem_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/in_unkown_problem_answer_setting"
+                    android:textSize="@dimen/dm_22sp"
+                    android:textColor="@color/white"
+                    android:background="@color/deepskyblue"
+                    android:layout_marginTop="@dimen/dm_50dp"
+                    android:padding="@dimen/dm_5dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="563dp"
+        android:visibility="invisible" />
+</LinearLayout>

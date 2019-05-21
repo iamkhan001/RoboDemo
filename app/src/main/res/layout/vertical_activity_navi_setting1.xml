@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/VerticalGlobalChildBackgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_global_title" />
+
+    <LinearLayout
+        android:layout_below="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="1650dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dm_20dp"
+        android:layout_marginLeft="@dimen/dm_20dp"
+        android:layout_marginRight="@dimen/dm_20dp"
+        android:layout_marginTop="@dimen/dm_150dp"
+        android:background="@drawable/bg_set"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rl_root"
+            android:layout_marginBottom="@dimen/dm_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:layout_marginRight="@dimen/dm_10dp"
+                    android:layout_marginTop="@dimen/dm_10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/navi_default_map" />
+
+                <LinearLayout
+                    android:id="@+id/ll_navi_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_map"
+                    android:layout_marginBottom="@dimen/dm_10dp"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:layout_marginRight="@dimen/dm_10dp"
+                    android:layout_marginTop="@dimen/dm_10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/btn_map_upload"
+                        style="@style/navi_btn_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/navi2_map_upload_btn"
+                        android:text="@string/navi_upload_map"
+                        android:textAllCaps="false" />
+
+                    <TextView
+                        style="@style/navi_mode_title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dm_40dp"
+                        android:layout_toRightOf="@id/btn_map_upload"
+                        android:gravity="center"
+                        android:text="@string/navi_mode"
+                        android:textAllCaps="false" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btn_map_navi_normal"
+                            style="@style/navi_mode_unselect_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm_10dp"
+                            android:layout_marginRight="@dimen/dm_10dp"
+                            android:text="@string/map_navi"
+                            android:textAllCaps="false"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_map_navi_select"
+                            style="@style/navi_mode_select_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm_10dp"
+                            android:layout_marginRight="@dimen/dm_10dp"
+                            android:text="@string/map_navi"
+                            android:textAllCaps="false" />
+
+                        <Button
+                            android:id="@+id/btn_menu_navi_normal"
+                            style="@style/navi_mode_unselect_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_navi"
+                            android:textAllCaps="false" />
+
+                        <Button
+                            android:id="@+id/btn_menu_navi_select"
+                            style="@style/navi_mode_select_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_navi"
+                            android:textAllCaps="false"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!---->
+
+                <LinearLayout
+                    android:id="@+id/ll_navi_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_navi_mode"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dm_10dp"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:layout_marginRight="@dimen/dm_10dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/btn_add_navi"
+                        style="@style/navi_tab_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/navi2_tab_point"
+                        android:text="@string/add_navi_point"
+                        android:textAllCaps="false"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_add_navi_selected"
+                        style="@style/navi_tab_textview_selected"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/navi2_tab_point_select"
+                        android:text="@string/add_navi_point"
+                        android:textAllCaps="false" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/navi2_smallline" />
+
+                    <Button
+                        android:id="@+id/btn_add_yingbin"
+                        style="@style/navi_tab_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/navi2_tab_yingbin"
+                        android:text="@string/add_yingbin_point"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/btn_add_yingbin_selected"
+                        style="@style/navi_tab_textview_selected"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/navi2_tab_yingbin_select"
+                        android:text="@string/add_yingbin_point"
+                        android:textAllCaps="false"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/navi2_smallline" />
+
+                    <Button
+                        android:id="@+id/btn_add_guide"
+                        style="@style/navi_tab_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/navi2_tab_guide"
+                        android:text="@string/add_guide"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/btn_add_guide_selected"
+                        style="@style/navi_tab_textview_selected"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/navi2_tab_guide_select"
+                        android:text="@string/add_guide"
+                        android:textAllCaps="false"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_navi_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/ll_navi_tab"
+                    android:layout_marginBottom="@dimen/dm_10dp"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:layout_marginRight="@dimen/dm_10dp"
+                    android:background="@drawable/navi2_tab_bg"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/navi2_line" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/iv_line"
+                        android:layout_marginBottom="@dimen/dm_110dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dm_40dp"
+                            android:orientation="horizontal">
+
+                            <include
+                                android:id="@+id/navi_tab_point"
+                                layout="@layout/view_navi_setting"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <include
+                                android:id="@+id/view_tab_yingbin"
+                                layout="@layout/view_yingbin_setting"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                            <include
+                                android:id="@+id/view_tab_guide"
+                                layout="@layout/view_guide_setting"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <LinearLayout
+                        android:id="@+id/ll_save_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dm_20dp"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btn_save_yingbin"
+                            style="@style/navi_btn_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/navi2_save_btn"
+                            android:text="@string/save"
+                            android:textAllCaps="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_save_delete_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/dm_20dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/btn_save"
+                            style="@style/navi_btn_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/navi2_save_btn"
+                            android:paddingLeft="@dimen/dm_30dp"
+                            android:text="@string/save"
+                            android:textAllCaps="false" />
+
+                        <Button
+                            android:id="@+id/btn_delete"
+                            style="@style/navi_delete_btn_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm_30dp"
+                            android:background="@drawable/navi2_delete_btn"
+                            android:paddingLeft="@dimen/dm_30dp"
+                            android:text="@string/delete"
+                            android:textAllCaps="false" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

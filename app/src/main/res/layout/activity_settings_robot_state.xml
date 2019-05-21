@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/child_page_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_view"
+        layout="@layout/layout_global_title" />
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_view"
+        android:background="@color/white"
+        >
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:stretchColumns="*"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_2px"
+                android:background="@color/red"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                >
+                <TextView
+                    android:id="@+id/tv_header1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="header1"
+                    android:textSize="@dimen/dm_22sp"
+                    android:layout_margin="@dimen/dm_10dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_header2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="header1"
+                    android:textSize="@dimen/dm_22sp"
+                    android:layout_margin="@dimen/dm_10dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_header3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="header1"
+                    android:textSize="@dimen/dm_22sp"
+                    android:layout_margin="@dimen/dm_10dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_header4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="header1"
+                    android:textSize="@dimen/dm_22sp"
+                    android:layout_margin="@dimen/dm_10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_header5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="header1"
+                    android:textSize="@dimen/dm_22sp"
+                    android:layout_margin="@dimen/dm_10dp"
+                    />
+
+            </TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_2px"
+                android:background="@color/red"
+                />
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_view"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <com.csjbot.blackgaga.widget.TableView
+            android:id="@+id/table_view"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/dm_800dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dm_10dp"
+            app:dividerColor="@color/red"
+            app:dividerWidth="2px"
+            app:headerColor="@color/green"
+            app:headerTextColor="@color/blue"
+            app:headerTextSize="@dimen/dm_22sp"
+            app:rowHeight="@dimen/dm_60dp"
+            app:textColor="@color/black"
+            app:textSize="@dimen/dm_20sp"
+            app:unitColumnWidth="@dimen/dm_0dp" />
+    </ScrollView>
+</RelativeLayout>

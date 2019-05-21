@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_language_list_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_chinese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:layout_marginRight="@dimen/dm_10dp"
+        android:gravity="center"
+        android:text="中文(简体)"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm_22sp" />
+
+    <TextView
+        android:id="@+id/tv_english_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:layout_marginRight="@dimen/dm_10dp"
+        android:gravity="center"
+        android:text="English(United States)"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm_22sp" />
+
+    <TextView
+        android:id="@+id/tv_english_uk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:layout_marginRight="@dimen/dm_10dp"
+        android:gravity="center"
+        android:text="English(United Kingdom)"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm_22sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_japanese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:layout_marginRight="@dimen/dm_10dp"
+        android:gravity="center"
+        android:text="日本語"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm_22sp"/>
+
+    <TextView
+        android:id="@+id/tv_korean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:layout_marginRight="@dimen/dm_10dp"
+        android:gravity="center"
+        android:text="한국어"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm_22sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_french_france"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:layout_marginRight="@dimen/dm_10dp"
+        android:gravity="center"
+        android:text="Français(France)"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm_22sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_spanish_spain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:layout_marginRight="@dimen/dm_10dp"
+        android:gravity="center"
+        android:text="Español(España)"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm_22sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_portuguese_portugal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:layout_marginRight="@dimen/dm_10dp"
+        android:gravity="center"
+        android:text="Português(Portugal)"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm_22sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_indonesia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:layout_marginRight="@dimen/dm_10dp"
+        android:gravity="center"
+        android:text="Indonesia"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm_22sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_russian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:layout_marginRight="@dimen/dm_10dp"
+        android:layout_marginBottom="@dimen/dm_10dp"
+        android:gravity="center"
+        android:text="Pусский"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm_22sp"
+        android:visibility="visible" />
+
+</LinearLayout>

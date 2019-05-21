@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/no_data_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/view_image"
+            android:layout_width="285dp"
+            android:layout_height="286dp"
+            android:background="@drawable/nodata_2" />
+
+        <TextView
+            android:id="@+id/body_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_image"
+            android:background="@drawable/bt_hint"
+            android:gravity="center"
+            android:text="@string/net_error"
+            android:textColor="@color/dimgray"/>
+
+        <Button
+            android:layout_marginTop="@dimen/dm_20dp"
+            android:stateListAnimator="@anim/button_press"
+            android:id="@+id/in_data_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ty_btn"
+            android:text="@string/settings"
+            android:textAllCaps="false"
+            android:textColor="@color/setting_button_color"
+            android:textSize="@dimen/dm_18sp" />
+    </LinearLayout>
+</RelativeLayout>

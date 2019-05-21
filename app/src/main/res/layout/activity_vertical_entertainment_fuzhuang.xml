@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/VerticalGlobalChildBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:orientation="vertical">
+        <include layout="@layout/layout_global_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_work_content_height"
+            android:layout_margin="@dimen/vertical_content_maigin"
+            android:layout_below="@+id/title_view"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rv_storytelling"
+                android:layout_width="@dimen/dm_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_20dp"
+                android:layout_marginBottom="@dimen/dm_20dp"
+                android:background="@drawable/entertainment_story_btn"
+                android:stateListAnimator="@anim/button_press">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="200dp"
+                    android:paddingRight="@dimen/dm_20dp"
+                    android:text="@string/tellstory"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm_30dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rv_music"
+                android:layout_width="@dimen/dm_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/dm_20dp"
+                android:layout_marginBottom="@dimen/dm_20dp"
+                android:background="@drawable/entertainment_song_btn"
+                android:stateListAnimator="@anim/button_press">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="200dp"
+                    android:paddingRight="@dimen/dm_20sp"
+                    android:text="@string/sing"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm_30sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/chat_view"
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="563dp" />
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pj_menu_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dm_50dp"
+        android:paddingRight="@dimen/dm_90dp"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_margin="@dimen/dm_10dp"
+            android:id="@+id/ll_qr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_imageview1"
+                android:layout_width="@dimen/dm_250dp"
+                android:layout_height="@dimen/dm_250dp"
+                android:padding="4dp"
+                android:src="@drawable/comintro_qrcode"
+                />
+
+            <TextView
+                android:textSize="@dimen/dm_14sp"
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dm_5dp"
+                android:gravity="center"
+                android:text="服务号"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_qr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_40dp"
+            android:layout_marginRight="@dimen/dm_40dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_imageview2"
+                android:layout_width="@dimen/dm_250dp"
+                android:layout_height="@dimen/dm_250dp"
+                android:padding="4dp"
+                android:src="@drawable/comintro_qrcode"/>
+
+            <TextView
+                android:textSize="@dimen/dm_14sp"
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dm_5dp"
+                android:gravity="center"
+                android:text="@string/official_accounts"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_qr3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_imageview3"
+                android:layout_width="@dimen/dm_250dp"
+                android:layout_height="@dimen/dm_250dp"
+                android:padding="4dp"
+                android:src="@drawable/comintro_qrcode"/>
+
+            <TextView
+                android:textSize="@dimen/dm_14sp"
+                android:id="@+id/textview3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dm_5dp"
+                android:gravity="center"
+                android:text="@string/official_accounts"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/pj_float_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_100dp">
+
+        <ImageView
+            android:id="@+id/pj_float_view_icon_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:src="@drawable/pj_image_float_logo"
+            />
+
+        <ImageView
+            android:id="@+id/pj_float_view_icon_notify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pj_anim_background"
+            />
+    </FrameLayout>
+
+</FrameLayout>

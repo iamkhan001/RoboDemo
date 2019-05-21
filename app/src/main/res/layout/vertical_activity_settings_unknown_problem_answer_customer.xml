@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/VerticalGlobalChildBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_global_title" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_work_content_height"
+            android:layout_below="@+id/title_view"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/vertical_content_maigin"
+            android:background="@drawable/bg_set"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <EditText
+                        android:id="@+id/et_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dm_10dp"
+                        android:hint="请输入自定义答案"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <Button
+                            android:id="@+id/bt_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="添加"
+                            android:textSize="@dimen/dm_22sp"
+                            android:textColor="@color/white"
+                            android:background="@color/deepskyblue"
+                            android:layout_margin="@dimen/dm_20dp"
+                            />
+                        <Button
+                            android:id="@+id/bt_update"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="修改"
+                            android:textSize="@dimen/dm_22sp"
+                            android:textColor="@color/white"
+                            android:background="@color/deepskyblue"
+                            android:layout_margin="@dimen/dm_20dp"
+                            />
+                        <Button
+                            android:id="@+id/bt_remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+                            android:textSize="@dimen/dm_22sp"
+                            android:textColor="@color/white"
+                            android:background="@color/red"
+                            android:layout_margin="@dimen/dm_20dp"
+                            />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/bt_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save"
+                        android:textSize="@dimen/dm_22sp"
+                        android:textColor="@color/white"
+                        android:background="@color/deepskyblue"
+                        android:layout_margin="@dimen/dm_20dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    >
+    <!--<TextView-->
+    <!--android:id="@+id/setting_speed_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/dm_380dp"-->
+    <!--android:layout_marginTop="@dimen/dm_240dp"-->
+    <!--android:paddingLeft="@dimen/dm_5dp"-->
+    <!--android:paddingRight="@dimen/dm_5dp"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@drawable/set_title"-->
+    <!--android:text="@string/setting_voice"-->
+    <!--android:textSize="@dimen/dm_28px"-->
+    <!--android:textColor="@color/gray444444"/>-->
+
+
+</LinearLayout>

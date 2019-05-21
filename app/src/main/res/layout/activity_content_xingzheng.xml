@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/GlobalChildBackgroundImage"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_global_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dm_50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <include layout="@layout/layout_global_chat_admin" />
+
+        <RelativeLayout
+            android:id="@+id/sales"
+            android:layout_width="1000dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dm_40dp"
+            android:background="@drawable/content_bg">
+
+            <WebView
+                android:id="@+id/network_webview_sales"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/dm_20dp"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/no_show"
+                layout="@layout/no_data_show"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                android:layout_width="@dimen/dm_50dp"
+                android:layout_height="@dimen/dm_50dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

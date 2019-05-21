@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="96dp">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="支付宝"-->
+            <!--android:textSize="36sp"-->
+            <!--android:visibility="visible" />-->
+
+        <ImageView
+            android:id="@+id/ivCode1"
+            android:layout_width="@dimen/dm_410dp"
+            android:layout_height="@dimen/dm_410dp"
+            android:padding="@dimen/dm_5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/first"
+        android:layout_marginEnd="135dp"
+        android:visibility="visible">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="微信"-->
+            <!--android:textSize="36sp"-->
+            <!--android:visibility="visible" />-->
+
+        <ImageView
+            android:id="@+id/ivCode2"
+            android:layout_width="@dimen/dm_410dp"
+            android:layout_height="@dimen/dm_410dp"
+            android:padding="@dimen/dm_5dp" />
+    </LinearLayout>
+    <include layout="@layout/no_data_show"
+    />
+    <Button
+        android:id="@+id/btnCancelOrder"
+        style="@style/product_list_addcart_textview"
+        android:layout_width="@dimen/dm_410dp"
+        android:layout_height="@dimen/dm_90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/pay_print_btn"
+        android:paddingLeft="@dimen/dm_70dp"
+        android:stateListAnimator="@anim/button_press"
+        android:text="@string/order_cancel"
+        android:textSize="36sp"
+        android:visibility="visible" />
+
+
+    <!--<LinearLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/ivCode"-->
+            <!--android:layout_width="@dimen/dm_410dp"-->
+            <!--android:layout_height="@dimen/dm_410dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background="@drawable/code_bg"-->
+            <!--android:padding="@dimen/dm_5dp" />-->
+
+        <!--<Button-->
+            <!--style="@style/product_list_addcart_textview"-->
+            <!--android:stateListAnimator="@anim/button_press"-->
+            <!--android:id="@+id/btnCancelOrder"-->
+            <!--android:layout_width="@dimen/dm_410dp"-->
+            <!--android:layout_height="@dimen/dm_90dp"-->
+            <!--android:paddingLeft="@dimen/dm_70dp"-->
+            <!--android:background="@drawable/pay_print_btn"-->
+            <!--android:layout_marginTop="@dimen/dm_30dp"-->
+            <!--android:textSize="36sp"-->
+            <!--android:text="@string/order_cancel"/>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

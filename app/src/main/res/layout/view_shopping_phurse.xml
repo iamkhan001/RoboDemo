@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:id="@+id/layout_cart_phurse">
+    <LinearLayout
+        android:stateListAnimator="@anim/button_press"
+        android:id="@+id/layoutShoppingCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            style="@style/product_list_addcart_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_2dp"
+            android:background="@drawable/add_cart_product_detail"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dm_58dp"
+            android:text="@string/add_cart"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:stateListAnimator="@anim/button_press"
+        android:id="@+id/layoutPhurse"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/buy_ico"
+        android:gravity="center">
+
+        <TextView
+            style="@style/product_list_buy_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buy_product"/>
+    </LinearLayout>
+</LinearLayout>

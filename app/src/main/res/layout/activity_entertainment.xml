@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/GlobalChildBackgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_global_title" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dm_30dp"
+        android:layout_marginTop="@dimen/dm_15dp"
+        android:layout_weight="1"
+        android:background="@drawable/content_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rv_storytelling"
+                android:layout_width="@dimen/dm_400dp"
+                android:layout_height="@dimen/dm_200dp"
+                android:layout_marginLeft="@dimen/dm_50dp"
+                android:layout_marginRight="@dimen/dm_50dp"
+                android:background="@drawable/entertainment_story_btn"
+                android:stateListAnimator="@anim/button_press">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="200dp"
+                    android:paddingEnd="@dimen/dm_20dp"
+                    android:text="@string/tellstory"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm_28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rv_dance"
+                android:layout_width="@dimen/dm_400dp"
+                android:layout_height="@dimen/dm_200dp"
+                android:layout_marginLeft="@dimen/dm_50dp"
+                android:layout_marginRight="@dimen/dm_50dp"
+                android:background="@drawable/entertainment_dance_btn"
+                android:stateListAnimator="@anim/button_press">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="200dp"
+
+                    android:text="@string/dance"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm_30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rv_music"
+                android:layout_width="@dimen/dm_400dp"
+                android:layout_height="@dimen/dm_200dp"
+                android:layout_marginLeft="@dimen/dm_50dp"
+                android:layout_marginRight="@dimen/dm_50dp"
+                android:background="@drawable/entertainment_song_btn"
+                android:stateListAnimator="@anim/button_press">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="200dp"
+                    android:paddingEnd="@dimen/dm_20sp"
+                    android:text="@string/sing"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm_30sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

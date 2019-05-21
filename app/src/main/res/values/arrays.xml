@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="speedsetting">
+        <item>0.40</item>
+        <item>0.45</item>
+        <item>0.50</item>
+        <item>0.55</item>
+        <item>0.60</item>
+        <item>0.65</item>
+        <item>0.70</item>
+    </string-array>
+    <string-array name="volumeSetting">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="electricitys">
+        <item>10%</item>
+        <item>20% </item>
+        <item>30%</item>
+        <item>40%</item>
+    </string-array>
+
+    <string-array name="array_role_entries">
+        <item>方木（普通话）</item>
+        <item>方茴（普通话）</item>
+        <item>郭嘉（普通话）</item>
+        <item>风清扬（普通话）</item>
+        <item>小鲜肉（普通话）</item>
+        <item>东方教主（普通话）</item>
+        <item>小萝莉（普通话）</item>
+        <item>男主播（普通话）</item>
+        <item>邻家姐姐（普通话）</item>
+        <item>女汉子（东北话）</item>
+        <item>傻根（河南话）</item>
+        <item>涵涵（湖南话）</item>
+        <item>辣妹子（四川话）</item>
+        <item>佳宜（台湾话）</item>
+        <item>港姐（粤语）</item>
+        <item>佳佳老师</item>
+        <item>希拉里（仅英语）</item>
+    </string-array>
+
+    <string-array name="array_role_values">
+        <item>xiaoxi</item>
+        <item>xiaoyin</item>
+        <item>xiaohou</item>
+        <item>jiansheng</item>
+        <item>xiaochun</item>
+        <item>junying</item>
+        <item>nannan</item>
+        <item>xiaofeng</item>
+        <item>xiaojing</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>xiaorong</item>
+        <item>xiaolin</item>
+        <item>xiaomei</item>
+        <item>jiajia</item>
+        <item>catherine</item>
+    </string-array>
+
+    <string-array name="array_role_testStrins">
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>欢迎使用苏州穿山甲机器人股份有限公司服务机器人</item>
+        <item>Welcome to use the Service robot make by Suzhou Pangolin Robot Co., Ltd.</item>
+    </string-array>
+
+</resources>

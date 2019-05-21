@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root"
+                style="@style/GlobalBackgroundImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/layout_global_title"/>
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_education"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_nav_education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_50dp"
+            android:layout_marginRight="@dimen/dm_50dp"
+            android:stateListAnimator="@anim/button_press"
+            />
+
+        <ImageView
+            android:stateListAnimator="@anim/button_press"
+            android:id="@+id/iv_learning_education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_50dp"
+            android:layout_marginRight="@dimen/dm_50dp"
+            />
+        <ImageView
+            android:stateListAnimator="@anim/button_press"
+            android:id="@+id/iv_about_jiaoyu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_50dp"
+            android:layout_marginRight="@dimen/dm_50dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_fun_education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_50dp"
+            android:layout_marginRight="@dimen/dm_50dp"
+            android:stateListAnimator="@anim/button_press"
+     />
+
+        <ImageView
+            android:id="@+id/iv_course_education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_50dp"
+            android:layout_marginRight="@dimen/dm_50dp"
+            android:stateListAnimator="@anim/button_press"
+        />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

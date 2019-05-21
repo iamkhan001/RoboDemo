@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    style="@style/GlobalChildBackgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_global_title" />
+
+
+    <ScrollView
+        android:layout_width="1650dp"
+        android:layout_height="@dimen/dm_800dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dm_50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_set"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="4">
+
+                <Button
+                    android:id="@+id/bt_set_network"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_network"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/setting_net"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_set_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_volume"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/voice_setting"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_set_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_speed"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/setting_speed"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/syn_data_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_sync_data"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/synchronous_data"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_save_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/set_save_map"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/save_map"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_restore_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/set_restore_map"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/restore_map"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/charge_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_charge"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/charge_administration"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_appearance"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/factory_setting"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_check_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_check_update"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/check_update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/pwd_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_pwd_manager"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/pwn_administration"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_set_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_about"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/about_bot"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_shutdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_shutdown"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/close"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_yinbin_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/iv_yingbin_setting"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/yingbin_setting"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_manual_positioning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_manual_positioning"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/manual_positioning"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_evaluation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_evaluate"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/evaluation_settings"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_navi_sound_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_voice_navigatinon"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/navi_sound_control"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_virtual_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_virtualkey"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/key_manager"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_robot_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/robot_state_info"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/status_information"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_semantics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_semantics"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/semantics_and_chat"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_navi_auto_exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_navi_auto_exit"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/nvai_setting"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+                <Button
+                    android:id="@+id/bt_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/settings_navi_auto_exit"
+                    android:gravity="center"
+                    android:stateListAnimator="@anim/button_press"
+                    android:text="@string/other_settings"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/dm_24px" />
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btn_change_skin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dm_420dp"
+        android:layout_marginTop="@dimen/dm_130dp"
+        android:gravity="center"
+        android:text="@string/setting_list"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/dm_20sp"
+        android:visibility="gone" />
+
+</LinearLayout>

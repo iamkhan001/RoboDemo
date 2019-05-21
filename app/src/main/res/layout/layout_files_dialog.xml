@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_newretail_dialog_bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_set"
+        android:layout_margin="@dimen/dm_20dp"
+        android:paddingTop="60dp"
+        android:paddingBottom="@dimen/dm_60dp"
+        android:paddingLeft="50dp">
+        <ListView
+            android:id="@+id/lv_file_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dm_22sp"
+        android:textColor="@color/gray666666"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dm_130dp"
+        android:text="@string/manage_map"/>
+</RelativeLayout>

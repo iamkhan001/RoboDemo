@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:dfv="http://schemas.android.com/apk/res-auto"
+             android:layout_width="152dp"
+             android:layout_height="152dp"
+             android:gravity="center"
+             android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/monk_relative_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/float_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginBottom="@dimen/dm_20dp"
+            android:layout_marginLeft="@dimen/dm_2dp"
+            android:layout_marginRight="@dimen/dm_2dp"
+            android:layout_marginTop="@dimen/dm_2dp"
+            android:scaleType="center"
+            android:src="@drawable/comintro_qrcode"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_qr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:text="关注我们  更多服务"
+        android:textColor="@color/red">
+
+    </TextView>
+
+</FrameLayout>

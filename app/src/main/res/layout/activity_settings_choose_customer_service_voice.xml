@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/GlobalChildBackgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_global_title" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dm_1520dp"
+        android:layout_height="@dimen/dm_650dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dm_150dp"
+        android:background="@drawable/bg_set"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_customer_service_voice"
+            android:textSize="@dimen/dm_40sp"
+            android:textColor="@color/black"
+            />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_yuansheng"
+                    android:layout_width="@dimen/dm_100dp"
+                    android:layout_height="@dimen/dm_100dp"
+                    android:background="@drawable/yuansheng"
+                    android:layout_margin="@dimen/dm_20dp"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/dm_60dp"
+                        android:layout_height="@dimen/dm_60dp"
+                        android:src="@drawable/xuanze"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dm_24sp"
+                    android:textColor="@color/black"
+                    android:text="@string/default_voice"
+                    android:layout_gravity="center_horizontal"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_luoli"
+                    android:layout_width="@dimen/dm_100dp"
+                    android:layout_height="@dimen/dm_100dp"
+                    android:background="@drawable/luoli"
+                    android:layout_margin="@dimen/dm_20dp"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/dm_60dp"
+                        android:layout_height="@dimen/dm_60dp"
+                        android:src="@drawable/xuanze"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dm_24sp"
+                    android:textColor="@color/black"
+                    android:text="@string/lolita_voice"
+                    android:layout_gravity="center_horizontal"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_dashu"
+                    android:layout_width="@dimen/dm_100dp"
+                    android:layout_height="@dimen/dm_100dp"
+                    android:background="@drawable/dashu"
+                    android:layout_margin="@dimen/dm_20dp"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/dm_60dp"
+                        android:layout_height="@dimen/dm_60dp"
+                        android:src="@drawable/xuanze"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dm_24sp"
+                    android:textColor="@color/black"
+                    android:text="@string/uncle_voice"
+                    android:layout_gravity="center_horizontal"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_gaoguai"
+                    android:layout_width="@dimen/dm_100dp"
+                    android:layout_height="@dimen/dm_100dp"
+                    android:background="@drawable/gaoguai"
+                    android:layout_margin="@dimen/dm_20dp"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/dm_60dp"
+                        android:layout_height="@dimen/dm_60dp"
+                        android:src="@drawable/xuanze"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dm_24sp"
+                    android:textColor="@color/black"
+                    android:text="@string/blame"
+                    android:layout_gravity="center_horizontal"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_kongling"
+                    android:layout_width="@dimen/dm_100dp"
+                    android:layout_height="@dimen/dm_100dp"
+                    android:background="@drawable/kongling"
+                    android:layout_margin="@dimen/dm_20dp"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/dm_60dp"
+                        android:layout_height="@dimen/dm_60dp"
+                        android:src="@drawable/xuanze"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dm_24sp"
+                    android:textColor="@color/black"
+                    android:text="@string/empty_spirit_voice"
+                    android:layout_gravity="center_horizontal"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_jingsong"
+                    android:layout_width="@dimen/dm_100dp"
+                    android:layout_height="@dimen/dm_100dp"
+                    android:background="@drawable/jingsong"
+                    android:layout_margin="@dimen/dm_20dp"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/dm_60dp"
+                        android:layout_height="@dimen/dm_60dp"
+                        android:src="@drawable/xuanze"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dm_24sp"
+                    android:textColor="@color/black"
+                    android:text="@string/thriller_voice"
+                    android:layout_gravity="center_horizontal"
+                    />
+            </LinearLayout>
+
+
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

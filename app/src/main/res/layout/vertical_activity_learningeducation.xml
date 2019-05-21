@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root"
+                style="@style/VerticalGlobalChildBackgroundImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_title_content">
+
+    <include
+        android:id="@+id/title_view"
+        layout="@layout/layout_global_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/chat_view"
+            layout="@layout/layout_global_chat" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vertical_work_content_height"
+        android:layout_margin="@dimen/vertical_content_maigin"
+        android:layout_below="@+id/title_view"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/index_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/education_iv_left"
+                android:stateListAnimator="@anim/button_press"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_weight="6">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/index_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/education_iv_right"
+                android:stateListAnimator="@anim/button_press"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

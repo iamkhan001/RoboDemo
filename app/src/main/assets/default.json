@@ -1,0 +1,46 @@
+{
+  "message": "ok",
+  "result": {
+    "product": [
+      {
+        "imgName": "1501224598625.png",
+        "introduction": "好吃源于工艺好。\r\n采用独特工艺，历经二十多道工序而成。",
+        "money": 0.01,
+        "name": "鸭头",
+        "product_id": "D9MXSBQREVGLL4W9BNOFG8UHG5DJ86EG",
+        "unit": "个",
+        "url": "120.27.233.57:8001/pms/1501224598625.png"
+      },
+      {
+        "imgName": "1501225161938.png",
+        "introduction": "精心卤制，快乐体验，精选酱料，分外挑剔，秘制酱心，唇齿留香。",
+        "money": 0.01,
+        "name": "鸭翅膀",
+        "product_id": "DJUAFE642BYSN6ZIHCX74GC3P9U6TYGT",
+        "unit": "个",
+        "url": "120.27.233.57:8001/pms/1501225161938.png"
+      },
+      {
+        "imgName": "1501224439695.png",
+        "introduction": "好吃源于口感好。\r\n刚入口时有点甜，而后越吃越辣，越吃越麻，越吃越香，停不了口！",
+        "money": 0.01,
+        "name": "鸭锁骨",
+        "product_id": "LJ6CE6XT7UGC3V0FSPD7OHDWODZRAHVE",
+        "unit": "个",
+        "url": "120.27.233.57:8001/pms/1501224439695.png"
+      },
+      {
+        "imgName": "1501224706488.png",
+        "introduction": "好吃源于配方好。\r\n甄选数十种香辛料，采用独特工艺卤制而成，醇香四溢。",
+        "money": 0.01,
+        "name": "鸭脖子",
+        "product_id": "YH8F80ZEIU21SUG5YCXR7RF05RKSRCNH",
+        "unit": "个",
+        "url": "120.27.233.57:8001/pms/1501224706488.png"
+      }
+    ],
+    "zipName": "stvH.zip",
+    "zipUrl": "120.27.233.57:8001/zip/stvH.zip"
+  },
+  "status": "200"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:stateListAnimator="@anim/button_press"
+        android:id="@+id/index_right"
+        android:layout_width="38dp"
+        android:layout_height="63dp"
+        android:background="@drawable/iv_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="@dimen/dm_60dp"/>
+
+    <Button
+        android:stateListAnimator="@anim/button_press"
+        android:id="@+id/index_left"
+        android:layout_width="38dp"
+        android:layout_height="63dp"
+        android:background="@drawable/iv_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/dm_60dp"/>
+
+</android.support.constraint.ConstraintLayout>

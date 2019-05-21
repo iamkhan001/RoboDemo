@@ -1,0 +1,232 @@
+apply plugin: 'com.android.application'
+
+android {
+
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
+
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.csjbot.blackgaga"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+        buildConfigField 'String', 'ROBOT_TYPE_DEF_SNOW', '"snow"'
+        buildConfigField 'String', 'ROBOT_TYPE_DEF_ALICE', '"alice"'
+        buildConfigField 'String', 'ROBOT_TYPE_DEF_ALICE_PLUS', '"alice_plus"'
+        buildConfigField 'String', 'ROBOT_TYPE_DEF_AMY_PLUS', '"amy_plus"'
+        flavorDimensions "version"
+        productFlavors {
+            snow {
+                buildConfigField 'String', 'robotType', '"snow"'
+                buildConfigField 'String', 'category', '"NewRetail_snow"'
+                versionName "NewRetail_Snow_" + rootProject.ext.android["versionName"]
+                manifestPlaceholders = [screenOrientation: "landscape"]
+            }
+
+            alice {
+                buildConfigField 'String', 'robotType', '"alice"'
+                buildConfigField 'String', 'category', '"NewRetail_alies"'
+                versionName "NewRetail_Alice_" + rootProject.ext.android["versionName"]
+                manifestPlaceholders = [screenOrientation: "landscape"]
+            }
+
+            alice_plus {
+                buildConfigField 'String', 'robotType', '"alice_plus"'
+                buildConfigField 'String', 'category', '"NewRetail_alice_plus"'
+                versionName "NewRetail_Alice_Plus_" + rootProject.ext.android["versionName"]
+                manifestPlaceholders = [screenOrientation: "portrait"]
+            }
+
+            amy_plus {
+                buildConfigField 'String', 'robotType', '"amy_plus"'
+                buildConfigField 'String', 'category', '"NewRetail_amy_plus"'
+                versionName "NewRetail_Amy_Plus_" + rootProject.ext.android["versionName"]
+                manifestPlaceholders = [screenOrientation: "portrait"]
+            }
+        }
+
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "", //暂时填写默认值即可.
+        ]
+
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+
+        useLibrary 'org.apache.http.legacy'
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [app_name: "@string/app_name",
+                                    app_icon: "@mipmap/ic_startbutton"]
+
+            versionNameSuffix ""
+            buildConfigField 'String', 'DEFAULT_ADRESS', '"http://www.example.com/"'
+
+        }
+
+        // 开发环境
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [app_name: "@string/app_name_debug",
+                                    app_icon: "@mipmap/ic_startbutton_debug"]
+
+            versionNameSuffix rootProject.ext.android["buildVersion"] + "_DEV"
+            buildConfigField 'String', 'DEFAULT_ADRESS', '"http://www.example.com/"'
+        }
+
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    sourceSets {
+        main {
+            // 将 jniLib 指向 libs
+            jniLibs.srcDir 'libs'
+        }
+    }
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.3.1'
+            }
+        }
+    }
+}
+
+
+beforeEvaluate {
+    tasks.matching {
+        it.name.endsWith("test") || it.name.endsWith("Test")
+    }.each {
+        tk -> tk.dependsOn(cleanTestApks)
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project (path: ':coshandler')
+    implementation project (path: ':printer')
+    implementation project(path: ':promeg')
+    implementation project (path: ':voiceclient')
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation rootProject.ext.dependencies["retrofit"]
+    implementation rootProject.ext.dependencies["awesomeQRCode"]
+    implementation rootProject.ext.dependencies["rxjava2"]
+    implementation rootProject.ext.dependencies["gson"]
+    implementation rootProject.ext.dependencies["retrofit_rxjava"]
+    implementation rootProject.ext.dependencies["retrofit_gson"]
+    implementation rootProject.ext.dependencies["glide"]
+    implementation rootProject.ext.dependencies["eventbus"]
+    implementation rootProject.ext.dependencies["bugly_sdk"]
+    implementation rootProject.ext.dependencies["bugly_ndk"]
+    implementation rootProject.ext.dependencies["supertextview"]
+    implementation rootProject.ext.dependencies["rxandroid"]
+    implementation rootProject.ext.dependencies["interceptor"]
+    // ARouter
+
+    implementation('com.danikula:videocache:2.7.0') {
+        exclude group: 'org.slf4j'
+    }
+
+    annotationProcessor 'com.alibaba:arouter-compiler:1.0.3'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.1.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.alibaba:arouter-api:1.2.1'
+    implementation 'com.alibaba:fastjson:1.2.39'
+    implementation 'com.azoft.carousellayoutmanager:carousel:1.2.1'
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.42'
+    implementation 'com.github.Jay-Goo:RangeSeekBar:v1.0.7'
+    implementation 'com.github.promeg:tinypinyin:2.0.3'
+    implementation 'com.github.razerdp:BasePopup:2.0.9'
+    implementation 'com.google.zxing:android-core:3.3.0'
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation 'com.google.zxing:javase:3.3.3'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'fm.jiecao:jiecaovideoplayer:4.8.3'
+    implementation 'io.netty:netty-all:4.1.23.Final'
+
+    implementation 'com.github.promeg:tinypinyin:2.0.3'
+
+
+
+    implementation 'skin.support:skin-support-design:2.2.3'
+    implementation 'skin.support:skin-support:2.2.3'
+    implementation files('libs/Baidu_Mtj_android_3.9.2.0.jar')
+    implementation files('libs/jcore-android-1.1.9.jar')
+    implementation files('libs/jpush-android-3.1.1.jar')
+    implementation files('libs/pgliblivemulti.jar')
+    implementation files('libs/pgnpp.jar')
+    implementation files('libs/Msc.jar')
+    implementation files('libs/cameraclient.jar')
+
+    implementation files('libs/TinypinJmhDict-1.0.jar')
+    implementation files('libs/tinypinyin-lexicons-java-cncity-2.0.0.jar')
+
+    implementation(name: 'vuisdk-release-1.1.156-online', ext: 'aar')
+}

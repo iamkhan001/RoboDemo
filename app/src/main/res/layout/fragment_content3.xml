@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dm_20dp"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!--<TextView-->
+        <!--android:id="@+id/title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/dm_20dp"-->
+        <!--android:layout_marginLeft="@dimen/dm_20dp"-->
+        <!--android:layout_marginRight="@dimen/dm_20dp"-->
+        <!--android:textColor="@color/content_title_color"-->
+        <!--android:textSize="30sp"-->
+        <!--android:text="借记卡申请"/>-->
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dm_20dp"
+        android:background="@drawable/content_right_small_bg"
+        android:layout_centerInParent="true"
+        />
+</LinearLayout>

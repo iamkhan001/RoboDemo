@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/root"
+              style="@style/GlobalBackgroundImage"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_global_title"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dm_180dp"
+        android:layout_marginRight="@dimen/dm_180dp"
+        android:layout_marginTop="@dimen/dm_20dp"
+        android:columnCount="4">
+
+        <RelativeLayout
+
+            android:id="@+id/nav_shuiwu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dm_20dp"
+            android:layout_marginRight="@dimen/dm_50dp"
+
+            android:background="@drawable/iv_navigation"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_400dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/nav_lobby"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginRight="@dimen/dm_50dp"
+            android:id="@+id/services_shuiwu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_product"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_400dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/Coupon"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/peripheral_services_shuiwu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_peripheral_services"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_400dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/local_service"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/dm_50dp"
+            android:id="@+id/administrative_consulting_shuiwu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_about"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dm_400dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/consultation_in"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+    </GridLayout>
+
+    <include
+
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</LinearLayout>

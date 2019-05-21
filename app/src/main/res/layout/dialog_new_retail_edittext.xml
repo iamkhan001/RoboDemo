@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_set_dialog"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dm_20dp"
+        >
+        <EditText
+            android:id="@+id/et_content"
+            style="@style/setting_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm_180dp"
+            android:layout_marginLeft="@dimen/dm_20dp"
+            android:layout_marginRight="@dimen/dm_20dp"
+            android:textSize="@dimen/dm_22sp"
+            android:textColor="@color/gray666666"
+            android:padding="@dimen/dm_10dp"
+            android:hint="@string/input_sn"
+            />
+        <Button
+            android:id="@+id/bt_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ty_btn"
+            android:layout_marginTop="@dimen/dm_350dp"
+            android:layout_marginLeft="@dimen/dm_150dp"
+            android:text="@string/cancel"
+            android:textSize="@dimen/dm_22sp"
+            android:textColor="@color/setting_button_color"
+            />
+        <Button
+            android:id="@+id/bt_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ty_btn"
+            android:layout_marginTop="@dimen/dm_350dp"
+            android:layout_marginRight="@dimen/dm_150dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/ok"
+            android:textSize="@dimen/dm_22sp"
+            android:textColor="@color/setting_button_color"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dm_22sp"
+        android:textColor="@color/gray666666"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dm_130dp"
+        />
+
+
+
+</RelativeLayout>

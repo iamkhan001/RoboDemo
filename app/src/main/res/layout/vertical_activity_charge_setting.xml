@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/VerticalGlobalChildBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_global_title" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_work_content_height"
+            android:layout_margin="@dimen/vertical_content_maigin"
+            android:layout_below="@+id/title_view"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_set"
+            android:gravity="center">
+
+            <include
+                layout="@layout/charge_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="242dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="23dp"
+            android:layout_marginTop="388dp"
+            android:text="@string/setting_about"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/dm_20sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+
+    <!--<Button-->
+    <!--android:id="@+id/button"-->
+    <!--style="@style/setting_btn_style"-->
+    <!--android:layout_width="261dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="525dp"-->
+    <!--android:layout_marginTop="388dp"-->
+    <!--android:text="@string/synchronous_data"-->
+    <!--android:textAllCaps="false"-->
+    <!--android:visibility="gone" />-->
+</LinearLayout>

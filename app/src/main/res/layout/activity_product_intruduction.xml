@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/GlobalChildBackgroundImage"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_global_title" />
+    <include layout="@layout/product_top_btn"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.csjbot.blackgaga.cart.adapter.RecyclerViewForEmpty
+            android:overScrollMode="never"
+            android:id="@+id/recyclerview"
+            android:scrollbars="none"
+            android:layout_width="@dimen/dm_1620dp"
+            android:layout_height="@dimen/dm_650dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

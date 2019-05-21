@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/VerticalGlobalChildBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:orientation="vertical">
+        <include layout="@layout/layout_global_title" />
+
+        <Button
+            android:id="@+id/setting_speed_title"
+            android:layout_width="242dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="525dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginTop="388dp"
+            android:text="@string/setting_speed"
+            android:textAllCaps="false"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/dm_20sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/title_view"
+            android:layout_height="@dimen/vertical_work_content_height"
+            android:layout_margin="@dimen/vertical_content_maigin"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_set"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/setting_about_size_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/dm_80dp"
+                    android:text="@string/setting_speed_value" />
+
+                <com.csjbot.blackgaga.widget.RangeSeekBar
+                    android:id="@+id/speed_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dm_20dp"
+                    android:layout_marginRight="@dimen/dm_80dp"
+                    app:cellMode="other"
+                    app:cells="6"
+                    app:hideProgressHint="true"
+                    app:lineColorEdge="@color/gray"
+                    app:lineColorSelected="@color/product_list_addcart_color"
+                    app:markTextArray="@array/speedsetting"
+                    app:max="100"
+                    app:min="0"
+                    app:seekBarHeight="20dp"
+                    app:seekBarMode="single"
+                    app:seekBarResId="@drawable/seekbar_thumb"
+                    app:textPadding="@dimen/dm_20dp"
+                    app:textSize="15sp"
+                    app:thumbSize="@dimen/dm_40dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSpeedSave"
+                style="@style/setting_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="true"
+                android:stateListAnimator="@anim/button_press"
+                android:text="@string/save"
+                android:textSize="26px" />
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/setting_speed_title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/dm_380dp"-->
+        <!--android:layout_marginTop="@dimen/dm_240dp"-->
+        <!--android:paddingLeft="@dimen/dm_5dp"-->
+        <!--android:paddingRight="@dimen/dm_5dp"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@drawable/set_title"-->
+        <!--android:text="@string/setting_speed"-->
+        <!--android:textSize="@dimen/dm_28px"-->
+        <!--android:textColor="@color/gray444444"/>-->
+    </LinearLayout>
+
+</LinearLayout>

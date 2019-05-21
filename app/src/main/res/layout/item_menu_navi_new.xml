@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item"
+    android:layout_width="275px"
+    android:layout_height="@dimen/dm_100px"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/dm_20dp"
+    android:layout_marginRight="@dimen/dm_20dp"
+    android:layout_marginTop="@dimen/dm_20dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_navi_name"
+        style="@style/navi_menu_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/navi2_menu_item"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/dm_5dp"
+        android:paddingRight="@dimen/dm_5dp"
+        android:textSize="30px" />
+</LinearLayout>

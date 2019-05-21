@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/GlobalChildBackgroundImage">
+    <include layout="@layout/layout_global_title" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/dm_1520dp"
+        android:layout_height="@dimen/dm_650dp"
+        android:layout_marginTop="@dimen/dm_150dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/bg_set">
+        <LinearLayout
+            android:id="@+id/ll_container1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/dm_250dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_system_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/android_current_version"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/tv_version_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dm_50dp"
+            android:id="@+id/ll_linux_container1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_250dp"
+            android:orientation="horizontal">
+            <TextView
+
+                android:id="@+id/tv_linux_system_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/linux_current_version"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/tv_linux_version_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tv_updateInfo"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_container1"
+            android:background="@drawable/bt_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dm_18dp"
+            android:paddingLeft="@dimen/dm_16dp"
+            android:paddingTop="@dimen/dm_8dp"
+            android:text=""
+            android:textColor="#ec7a00"
+            android:textSize="@dimen/dm_18sp"
+            android:visibility="gone"/>
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dm_80dp"
+            android:layout_width="@dimen/dm_300dp"
+            android:gravity="center"
+            android:layout_below="@id/tv_updateInfo"
+            android:layout_height="wrap_content">
+            <Button
+                style="@style/setting_btn_style"
+                android:stateListAnimator="@anim/button_press"
+                android:id="@+id/bt_linuxupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/linuxupdata"
+                android:textAllCaps="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dm_80dp"
+            android:layout_width="@dimen/dm_300dp"
+            android:gravity="center"
+            android:layout_below="@id/tv_updateInfo"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/setting_btn_style"
+                android:stateListAnimator="@anim/button_press"
+                android:id="@+id/bt_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Androidupdata"
+                android:textAllCaps="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

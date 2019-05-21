@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/hotel_activity_new_list_item_click_effect" android:state_pressed="true" />
+    <!--<item android:drawable="@drawable/hotel_activity_new_list_item_click_effect" android:state_focused="true" />-->
+    <item android:drawable="@drawable/hotel_activity_new_list_item_click_effect" android:state_selected="true" />
+    <item android:drawable="@drawable/hotel_activity_new_list_item_check_unselect" android:state_selected="false" />
+</selector>

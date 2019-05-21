@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/viewPager_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dm_20dp"
+        android:paddingLeft="@dimen/dm_15dp"
+        android:background="@drawable/hotel_picture_box"
+        android:paddingRight="@dimen/dm_20dp"
+        android:paddingTop="@dimen/dm_15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/dots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dm_50dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+        </RelativeLayout>
+    </RelativeLayout>
+        <LinearLayout
+        android:id="@+id/hotel_activity_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/hotel_detail_bg"
+        android:visibility="gone">
+
+        <include layout="@layout/hotel_activities_details"></include>
+    </LinearLayout>
+</RelativeLayout>

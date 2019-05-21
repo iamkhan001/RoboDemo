@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:background="@drawable/list_item_color_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="中国海峡人才市场"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <ImageView
+            android:visibility="gone"
+           android:layout_marginLeft="@dimen/dm_40dp"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:layout_toRightOf="@+id/text_address"
+            android:id="@+id/image"
+            android:layout_width="@dimen/dm_30dp"
+            android:layout_height="@dimen/dm_20dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/complete_type_conform"/>
+
+        <TextView
+            android:id="@+id/text_address"
+            android:layout_width="@dimen/dm_200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_name"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="东大路36号福建人才大厦4-7、15层"
+            android:textColor="#0099ff"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/text_address"
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="距离目的地200米"
+            android:textColor="#0099ff"
+            android:textSize="12sp"/>
+        <!--<RelativeLayout-->
+        <!--android:layout_below="@+id/rl_name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/text_address"-->
+        <!--android:layout_width="@dimen/dm_600dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:text="东大路36号福建人才大厦4-7、15层"-->
+        <!--android:textColor="#0099ff"-->
+        <!--android:textSize="12sp"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_distance"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="@dimen/dm_5dp"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="距离目的地200米"-->
+        <!--android:textColor="#0099ff"-->
+        <!--android:textSize="12sp"/>-->
+
+        <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="461dp"
+        android:layout_marginTop="@dimen/dm_15dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="480dp"
+            android:layout_height="470dp"
+            android:layout_marginLeft="@dimen/dm_20dp"
+            android:background="@drawable/hotel_activites_detail_box"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hotel_activity_title"
+                style="@style/new_hotel_detail_text"
+                android:layout_width="462dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/hotel_activity_data"
+                android:layout_marginTop="69dp"
+                android:gravity="center"
+                android:text="标题"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/hotel_activity_data"
+                style="@style/new_hotel_detail_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:layout_marginTop="48dp"
+                android:gravity="left"
+                android:text="@string/time"
+                android:visibility="visible"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotel_activity_title" />
+
+            <TextView
+                android:id="@+id/hotel_activity_place"
+                style="@style/new_hotel_detail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/direction"
+                android:gravity="center"
+                android:text="地点:会议二厅"
+                android:visibility="visible"
+                android:layout_marginTop="-1dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@+id/hotel_activity_data" />
+
+            <TextView
+                android:id="@+id/hotel_activity_ns"
+                style="@style/new_hotel_detail_bottom"
+                android:layout_width="@dimen/dm_320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:text="(八楼出电梯右拐20米)"
+                android:textColor="@color/hotel_activities_new_detail_text_color"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@+id/hotel_activity_place"
+                android:layout_marginTop="-5dp"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/hotel_activity_detail_photo"
+            android:layout_width="match_parent"
+            android:layout_height="470dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/dm_15dp"
+            android:layout_marginRight="@dimen/dm_15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hotel_activity_detail_bottom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm_200dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/dm_15dp"
+        android:text="@string/click_back"
+        android:textColor="@color/hotel_activities_new_detail_text_color"
+        android:textSize="36px" />
+
+</LinearLayout>

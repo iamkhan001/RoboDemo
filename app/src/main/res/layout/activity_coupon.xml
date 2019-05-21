@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    style="@style/GlobalChildBackgroundImage"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_global_title" />
+
+    <include layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:overScrollMode="never"
+        android:id="@+id/rv_couponList"
+        android:layout_width="1200dp"
+        android:layout_height="@dimen/dm_500dp"
+        android:layout_marginLeft="@dimen/dm_120dp"
+        android:layout_marginTop="@dimen/dm_250dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="@dimen/dm_400dp"
+        android:layout_height="@dimen/dm_400dp"
+        android:background="@drawable/code_bg"
+        android:layout_marginTop="@dimen/dm_280dp"
+        android:layout_toRightOf="@id/rv_couponList">
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dm_10dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:stateListAnimator="@anim/button_press"
+        android:layout_below="@id/rl_container"
+        android:layout_marginTop="@dimen/dm_8dp"
+        android:layout_marginRight="@dimen/dm_100dp"
+        android:text="@string/print"
+        android:background="@drawable/text_normal"
+        android:layout_alignRight="@id/rl_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_print"
+        />
+
+
+</RelativeLayout>

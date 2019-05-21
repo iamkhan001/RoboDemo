@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.csjbot.blackgaga.widget.CircleView
+        android:id="@+id/iv_bg"
+        android:layout_width="@dimen/dm_500dp"
+        android:layout_height="@dimen/dm_500dp"
+        android:src="@drawable/music_def_bg"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:stateListAnimator="@anim/button_press"
+        android:id="@+id/iv_start"
+        android:layout_width="@dimen/dm_100dp"
+        android:layout_height="@dimen/dm_100dp"
+        android:src="@drawable/iv_start"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        />
+
+    <ImageView
+        android:id="@+id/iv_pause"
+        android:layout_width="@dimen/dm_100dp"
+        android:layout_height="@dimen/dm_100dp"
+        android:src="@drawable/iv_pause"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

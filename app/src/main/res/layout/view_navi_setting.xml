@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/dm_20dp"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dm_20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name_title"
+            style="@style/navi_set_textview"
+            android:layout_width="@dimen/dm_110dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="@string/navi_name" />
+
+        <EditText
+            android:id="@+id/et_navi_name"
+            style="@style/setting_edit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_marginRight="@dimen/dm_20dp"
+            android:layout_toRightOf="@id/tv_name_title"
+            android:singleLine="true"
+            android:textSize="@dimen/dm_18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm_5dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dm_25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            style="@style/navi_set_textview"
+            android:layout_width="@dimen/dm_110dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="@string/navi_another_name" />
+
+        <EditText
+            android:id="@+id/et_another_name"
+            style="@style/setting_edit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_marginRight="@dimen/dm_20dp"
+            android:layout_toRightOf="@+id/tv_nickname"
+            android:singleLine="true"
+            android:textSize="@dimen/dm_18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm_5dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dm_25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_arrive_title"
+            style="@style/navi_set_textview"
+            android:layout_width="@dimen/dm_110dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="@string/navi_arrive_tip" />
+
+        <EditText
+            android:id="@+id/et_navi_arrive"
+            style="@style/setting_edit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_toLeftOf="@+id/btn_plz_arrive"
+            android:layout_toRightOf="@id/tv_arrive_title"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/dm_18dp" />
+
+        <Button
+            android:id="@+id/btn_plz_arrive"
+            style="@style/navi_plz_choose_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm_5dp"
+            android:layout_marginRight="@dimen/dm_20dp"
+            android:background="@drawable/navi2_select"
+            android:text="@string/plz_choose" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_explain_title"
+            style="@style/navi_set_textview"
+            android:layout_width="@dimen/dm_110dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="@string/navi_arrive_explain" />
+
+        <EditText
+            android:id="@+id/et_navi_description"
+            style="@style/setting_edit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_toLeftOf="@+id/btn_plz_explain"
+            android:layout_toRightOf="@id/tv_explain_title"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/dm_18dp" />
+
+        <Button
+            android:id="@+id/btn_plz_explain"
+            style="@style/navi_plz_choose_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm_5dp"
+            android:layout_marginRight="@dimen/dm_20dp"
+            android:background="@drawable/navi2_select"
+            android:text="@string/plz_choose" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm_5dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dm_25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_wait_time"
+            style="@style/navi_set_textview"
+            android:layout_width="@dimen/dm_110dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="@string/navi_wait" />
+
+        <EditText
+            android:id="@+id/et_wait_min"
+            style="@style/setting_edit"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_toRightOf="@id/tv_wait_time"
+            android:gravity="center_vertical"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textSize="@dimen/dm_18dp" />
+
+        <TextView
+            android:id="@+id/tv_min"
+            style="@style/navi_set_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_toRightOf="@id/et_wait_min"
+            android:text="@string/min" />
+
+        <EditText
+            android:id="@+id/et_wait_sec"
+            style="@style/setting_edit"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_toRightOf="@id/tv_min"
+            android:gravity="center_vertical"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textSize="@dimen/dm_18dp" />
+
+        <TextView
+            android:id="@+id/tv_sec"
+            style="@style/navi_set_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_toRightOf="@id/et_wait_sec"
+            android:text="@string/sec" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_wait_sec"
+            android:layout_marginLeft="@dimen/dm_20dp"
+            android:layout_toRightOf="@+id/tv_sec"
+            android:text="@string/wait_time_limit_10"
+            android:textColor="@color/navi2_item_textview"
+            android:textSize="@dimen/dm_10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_start_title"
+            style="@style/navi_set_textview"
+            android:layout_width="@dimen/dm_110dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="@string/navi_start_tip" />
+
+        <EditText
+            android:id="@+id/et_navi_start"
+            style="@style/setting_edit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_toLeftOf="@+id/btn_plz_start"
+            android:layout_toRightOf="@id/tv_start_title"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/dm_18dp" />
+
+        <Button
+            android:id="@+id/btn_plz_start"
+            style="@style/navi_plz_choose_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm_5dp"
+            android:layout_marginRight="@dimen/dm_20dp"
+            android:background="@drawable/navi2_select"
+            android:text="@string/plz_choose" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_music"
+            style="@style/navi_set_textview"
+            android:layout_width="@dimen/dm_110dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="@string/background_music" />
+
+        <TextView
+            android:id="@+id/et_navi_music"
+            style="@style/navi_unedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_toLeftOf="@+id/btn_plz_choose_music"
+            android:layout_toRightOf="@id/tv_music"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/dm_18dp" />
+
+        <Button
+            android:id="@+id/btn_plz_choose_music"
+            style="@style/navi_plz_choose_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dm_5dp"
+            android:layout_marginRight="@dimen/dm_5dp"
+            android:layout_toStartOf="@+id/cbMusic"
+            android:background="@drawable/navi2_select"
+            android:text="@string/plz_choose" />
+
+        <ToggleButton
+            android:id="@+id/cbMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:button="@drawable/navi2_off_ico"
+            android:checked="false"
+            android:padding="@dimen/dm_5dp"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_waying_name"
+            style="@style/navi_set_textview"
+            android:layout_width="@dimen/dm_110dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="@string/way_explain" />
+
+        <TextView
+            android:id="@+id/et_navi_explain"
+            style="@style/navi_unedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_toLeftOf="@+id/btn_plz_choose_file"
+            android:layout_toRightOf="@id/tv_waying_name"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/dm_18dp" />
+
+        <Button
+            android:id="@+id/btn_plz_choose_file"
+            style="@style/navi_plz_choose_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_5dp"
+            android:layout_marginRight="@dimen/dm_5dp"
+            android:layout_toLeftOf="@+id/cbExplain"
+            android:background="@drawable/navi2_select"
+            android:text="@string/plz_choose" />
+
+        <ToggleButton
+            android:id="@+id/cbExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:button="@drawable/navi2_off_ico"
+            android:checked="false"
+            android:padding="@dimen/dm_5dp"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_image_name"
+            style="@style/navi_set_textview"
+            android:layout_width="@dimen/dm_110dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="@string/navi_image_gif" />
+
+        <TextView
+            android:id="@+id/et_navi_image_path"
+            style="@style/navi_unedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_toLeftOf="@+id/btn_plz_choose_image"
+            android:layout_toRightOf="@id/tv_image_name"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/dm_18dp" />
+
+        <Button
+            android:id="@+id/btn_plz_choose_image"
+            style="@style/navi_plz_choose_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_5dp"
+            android:layout_marginRight="@dimen/dm_5dp"
+            android:layout_toLeftOf="@+id/cbImage"
+            android:background="@drawable/navi2_select"
+            android:text="@string/plz_choose" />
+
+        <ToggleButton
+            android:id="@+id/cbImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:button="@drawable/navi2_off_ico"
+            android:checked="false"
+            android:padding="@dimen/dm_5dp"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_get_position"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_x_point"
+                    style="@style/navi_set_textview"
+                    android:layout_width="@dimen/dm_110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/navi_xpoint" />
+
+                <EditText
+                    android:id="@+id/et_navi_xpoint"
+                    style="@style/setting_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:layout_marginRight="@dimen/dm_20dp"
+                    android:layout_toRightOf="@+id/tv_x_point"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dm_18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dm_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/dm_25sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_y_point"
+                    style="@style/navi_set_textview"
+                    android:layout_width="@dimen/dm_110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/navi_ypoint" />
+
+                <EditText
+                    android:id="@+id/et_navi_ypoint"
+                    style="@style/setting_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:layout_marginRight="@dimen/dm_20dp"
+                    android:layout_toRightOf="@+id/tv_y_point"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dm_18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dm_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/dm_25sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_r_point"
+                    style="@style/navi_set_textview"
+                    android:layout_width="@dimen/dm_110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/navi_zpoint" />
+
+                <EditText
+                    android:id="@+id/et_navi_zpoint"
+                    style="@style/setting_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:layout_marginRight="@dimen/dm_20dp"
+                    android:layout_toRightOf="@+id/tv_r_point"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dm_18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dm_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/dm_25sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_get_position"
+            style="@style/navi_get_pose_textview"
+            android:layout_width="@dimen/dm_90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm_20dp"
+            android:layout_marginRight="@dimen/dm_20dp"
+            android:background="@drawable/navi2_btn"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dm_5dp"
+            android:paddingRight="@dimen/dm_5dp"
+            android:text="@string/get_navi_point"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+
+</LinearLayout>

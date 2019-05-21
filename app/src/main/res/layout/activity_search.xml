@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/GlobalChildBackgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_global_title" />
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dm_40dp"
+        android:orientation="vertical">
+
+        <Button
+            android:stateListAnimator="@anim/button_press"
+            android:id="@+id/bt_sellService"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/text_select"
+            android:text="@string/selled_service"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:stateListAnimator="@anim/button_press"
+            android:id="@+id/bt_aboutVip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:background="@drawable/text_normal"
+            android:text="@string/about_vip"
+            android:textColor="@color/darkgray" />
+
+        <Button
+            android:stateListAnimator="@anim/button_press"
+            android:id="@+id/bt_priceLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:background="@drawable/text_normal"
+            android:text="@string/price_low"
+            android:textColor="@color/darkgray" />
+
+        <Button
+            android:id="@+id/bt_helpCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:background="@drawable/text_normal"
+            android:stateListAnimator="@anim/button_press"
+            android:text="@string/helper_center"
+            android:textColor="@color/darkgray"/>
+
+        <Button
+            android:stateListAnimator="@anim/button_press"
+            android:id="@+id/bt_joinService"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:background="@drawable/text_normal"
+            android:text="@string/join_servcie"
+            android:textColor="@color/darkgray" />
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_width="1200dp"-->
+        <!--android:layout_marginLeft="@dimen/dm_100dp"-->
+        <!--android:layout_height="@dimen/dm_450dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toRightOf="@id/ll_container"-->
+        <!--android:background="@drawable/temp1" />-->
+    <WebView
+        android:id="@+id/theQuery"
+        android:layout_width="1200dp"
+        android:layout_marginLeft="@dimen/dm_100dp"
+        android:layout_height="@dimen/dm_450dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ll_container"
+        />
+
+</RelativeLayout>

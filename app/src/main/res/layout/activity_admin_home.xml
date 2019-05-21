@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/root"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              style="@style/GlobalBackgroundImage"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_global_title" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <include layout="@layout/layout_global_chat_admin" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_service_introduction"
+            android:layout_width="350dp"
+            android:layout_height="740dp"
+            android:layout_margin="@dimen/dm_20dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/iv_query_sw"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/service_introduce"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm_28sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dm_50dp"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_navi"
+                android:layout_width="400dp"
+                android:layout_height="350dp"
+                android:layout_margin="@dimen/dm_20dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/iv_navigation_sw"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nav_lobby"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm_28sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dm_50dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_admin_consult"
+                android:layout_width="400dp"
+                android:layout_height="350dp"
+                android:layout_margin="@dimen/dm_20dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/iv_about_sw"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/consultation_in"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm_28sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dm_50dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_neaby_service"
+                android:layout_width="400dp"
+                android:layout_height="350dp"
+                android:layout_margin="@dimen/dm_20dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/iv_peripheral_services_sw"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/local_service"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm_28sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dm_50dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_vipcenter"
+                android:layout_width="400dp"
+                android:layout_height="350dp"
+                android:layout_margin="@dimen/dm_20dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/iv_vip_sw"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm_28sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dm_50dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

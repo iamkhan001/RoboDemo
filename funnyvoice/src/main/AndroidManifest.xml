@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.csjbot.funnyvoice" >
+
+    <application>
+        <!--<service-->
+            <!--android:name="com.csjbot.funnyvoice.FunnyVoiceService"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true"/>-->
+    </application>
+
+</manifest>

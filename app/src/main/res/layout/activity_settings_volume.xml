@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/GlobalChildBackgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_global_title" />
+
+    <Button
+        android:id="@+id/setting_speed_title"
+        android:layout_width="242dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="525dp"
+        android:layout_marginTop="240dp"
+        android:text="@string/setting_voice"
+        android:textAllCaps="false"
+        android:visibility="gone" />
+    android:textSize="@dimen/dm_20sp"
+    android:textColor="@color/darkgray" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dm_1520dp"
+        android:layout_height="@dimen/dm_650dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dm_150dp"
+        android:background="@drawable/bg_set"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivSoundLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm_80dp"
+                android:background="@drawable/sound_low" />
+
+            <ImageView
+                android:id="@+id/ivSoundHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dm_80dp"
+                android:background="@drawable/sound_high" />
+
+            <com.jaygoo.widget.RangeSeekBar
+                android:id="@+id/volume_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@id/ivSoundHigh"
+                android:layout_toRightOf="@id/ivSoundLow"
+                app:cellMode="other"
+                app:cells="10"
+                app:hideProgressHint="true"
+                app:lineColorEdge="@color/setting_voice_bg_color"
+                app:lineColorSelected="@color/setting_voice_selected_color"
+                app:markTextArray="@array/volumeSetting"
+                app:max="100"
+                app:seekBarHeight="10dp"
+                app:seekBarMode="single"
+                app:seekBarResId="@drawable/seekbar_thumb"
+                app:textPadding="@dimen/dm_20dp"
+                app:textSize="15sp"
+                app:thumbSize="@dimen/dm_40dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TTS："
+                android:textSize="@dimen/dm_22sp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm_85dp"
+                />
+
+            <com.jaygoo.widget.RangeSeekBar
+                android:id="@+id/tts_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:cellMode="other"
+                app:cells="10"
+                app:hideProgressHint="true"
+                app:lineColorEdge="@color/setting_voice_bg_color"
+                app:lineColorSelected="@color/setting_voice_selected_color"
+                app:markTextArray="@array/volumeSetting"
+                app:max="100"
+                app:seekBarHeight="10dp"
+                app:seekBarMode="single"
+                app:seekBarResId="@drawable/seekbar_thumb"
+                app:textPadding="@dimen/dm_20dp"
+                app:textSize="15sp"
+                app:thumbSize="@dimen/dm_40dp"
+                android:layout_marginLeft="@dimen/dm_140dp"
+                android:layout_marginRight="@dimen/dm_140dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/goToChooseVoiceSpeaker">
+
+            <TextView
+                android:id="@+id/tv_choose_tts_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm_80dp"
+                android:layout_marginRight="@dimen/dm_80dp"
+                android:text="@string/choose_tts_voice_speaker"
+                android:textSize="@dimen/dm_26dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose"
+                android:textColor="@color/white"
+                android:background="@color/deepskyblue"
+                android:onClick="goToChooseVoiceSpeaker"
+                android:layout_toRightOf="@+id/tv_choose_tts_voice"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goToChooseCustomerServiceVoice"
+            android:layout_marginTop="@dimen/dm_10dp">
+
+            <TextView
+                android:id="@+id/tv_choose_customer_service_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm_80dp"
+                android:layout_marginRight="@dimen/dm_80dp"
+                android:text="@string/choose_customer_service_voice"
+                android:textSize="@dimen/dm_26dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose"
+                android:textColor="@color/white"
+                android:background="@color/deepskyblue"
+                android:onClick="goToChooseCustomerServiceVoice"
+                android:layout_toRightOf="@+id/tv_choose_customer_service_voice"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/open_auto_switch_speech"
+                android:layout_marginLeft="@dimen/dm_80dp"
+                android:layout_marginRight="@dimen/dm_30dp"
+                android:textSize="@dimen/dm_26dp" />
+
+            <CheckBox
+                android:id="@+id/auto_speech_recognition_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:button="@null"
+                android:background="@drawable/checkbox_selector"
+                android:padding="@dimen/dm_5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_chinese_language_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="中文语言选择:"
+                android:layout_marginLeft="@dimen/dm_80dp"
+                android:layout_marginRight="@dimen/dm_30dp"
+                android:textSize="@dimen/dm_26dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_chinese_language_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/rb_mandarin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="普通话"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_cantonese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="粤语"
+                    />
+                <RadioButton
+                    android:id="@+id/rb_imz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="四川话"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/awakening_words_interrupt_conversation"
+                android:layout_gravity="center"
+                android:textSize="@dimen/dm_26dp"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:layout_marginLeft="@dimen/dm_80dp"
+                />
+
+            <CheckBox
+                android:id="@+id/cb_wakeup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:button="@null"
+                android:background="@drawable/checkbox_selector"
+                android:padding="@dimen/dm_5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_internationalization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/dm_26dp"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:layout_marginLeft="@dimen/dm_80dp"
+                />
+
+            <Button
+                android:id="@+id/bt_internationalization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activation"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/dm_30dp"
+                android:background="@color/deepskyblue"
+                android:onClick="openMultilingualRecognition"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    >
+    <!--<TextView-->
+    <!--android:id="@+id/setting_speed_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/dm_380dp"-->
+    <!--android:layout_marginTop="@dimen/dm_240dp"-->
+    <!--android:paddingLeft="@dimen/dm_5dp"-->
+    <!--android:paddingRight="@dimen/dm_5dp"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@drawable/set_title"-->
+    <!--android:text="@string/setting_voice"-->
+    <!--android:textSize="@dimen/dm_28px"-->
+    <!--android:textColor="@color/gray444444"/>-->
+
+
+</RelativeLayout>

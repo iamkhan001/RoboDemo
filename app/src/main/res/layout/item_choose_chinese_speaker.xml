@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginEnd="@dimen/dm_40dp"
+    android:layout_marginStart="@dimen/dm_40dp">
+
+    <CheckBox
+        android:id="@+id/chooseSpeakerCheckBox"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dm_20dp"
+        android:background="@drawable/checkbox_selecter"
+        android:button="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dm_20dp"
+        android:layout_marginRight="@dimen/dm_20dp"
+        android:layout_toEndOf="@+id/chooseSpeakerCheckBox"
+        android:layout_toStartOf="@+id/playSpeaker"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:layout_marginBottom="@dimen/dm_10dp"
+        >
+
+        <TextView
+            android:id="@+id/rollName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jiajia"
+            android:textSize="@dimen/dm_24sp" />
+
+        <TextView
+            android:id="@+id/speakWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我要说的话"
+            android:textSize="@dimen/dm_20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/playSpeaker"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/chooseSpeakerCheckBox"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/speakplay" />
+</RelativeLayout>

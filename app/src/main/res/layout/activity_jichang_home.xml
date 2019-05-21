@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/root"
+              style="@style/GlobalBackgroundImage"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_global_title"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:layout_marginRight="@dimen/dm_10dp"
+        android:layout_marginTop="@dimen/dm_340dp"
+        android:columnCount="5">
+
+        <RelativeLayout
+
+            android:id="@+id/consultation_service_jichang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dm_20dp"
+            android:layout_marginRight="@dimen/dm_50dp"
+            android:background="@drawable/iv_query"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="250dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/consultation_service"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/nav_jichang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dm_20dp"
+            android:layout_marginRight="@dimen/dm_50dp"
+
+            android:background="@drawable/iv_navigation"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="250dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/nav_vip"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/product_introduction_jichang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_product"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="250dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/product_introduction"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/dm_50dp"
+            android:id="@+id/fun_jichang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_entertainment"
+            android:stateListAnimator="@anim/button_press"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="250dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/fun"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/local_recommend_jichang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm_50dp"
+            android:background="@drawable/iv_peripheral_services"
+            android:stateListAnimator="@anim/button_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="250dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/local_recommend"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/dm_40px"/>
+        </RelativeLayout>
+
+    </GridLayout>
+
+    <include
+
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</LinearLayout>

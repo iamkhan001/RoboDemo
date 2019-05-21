@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/VerticalGlobalChildBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:orientation="vertical">
+        <include
+            layout="@layout/layout_global_title"/>
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_work_content_height"
+            android:layout_margin="@dimen/vertical_content_maigin"
+            android:layout_below="@+id/title_view"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/content_bg"
+            android:orientation="horizontal">
+            <ProgressBar
+                android:id="@+id/pd_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:id="@+id/layout_recyclerview"
+                android:layout_width="@dimen/dm_200dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dm_100dp"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                android:layout_marginBottom="@dimen/dm_20dp"
+                android:background="@drawable/content_left_bg">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dm_20dp"
+                    android:layout_marginBottom="@dimen/dm_20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_tab_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dm_40dp"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:layout_marginBottom="@dimen/dm_20dp"
+                android:orientation="vertical">
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm_60dp"
+                    app:tabBackground="@drawable/selector_bank_service_top"
+                    app:tabSelectedTextColor="@color/content_top_select_color"
+                    app:tabTextColor="@color/content_top_unsel_color"
+                    app:tabIndicatorColor="@android:color/transparent"
+                    app:tabTextAppearance="@style/bank_service_tab_textsize"
+                    app:tabMode="scrollable">
+                </android.support.design.widget.TabLayout>
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/content_right_bg"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dm_40dp"
+                android:layout_marginRight="@dimen/dm_40dp"
+                android:layout_marginBottom="@dimen/dm_40dp"
+                android:id="@+id/layout_no_data"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/no_data"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="563dp" />
+
+</LinearLayout>

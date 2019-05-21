@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/GlobalChildBackgroundImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/layout_global_title"/>
+
+    <include
+        layout="@layout/layout_global_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+
+
+    <com.csjbot.blackgaga.widget.MusicView
+        android:id="@+id/music_view"
+        android:layout_width="@dimen/dm_500dp"
+        android:layout_height="@dimen/dm_500dp"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.csjbot.blackgaga.widget.ChatView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dm_600dp"
+    android:layout_height="@dimen/dm_800dp"
+    android:id="@+id/chat_view"
+    android:background="@drawable/chatview_admin_bg"
+    android:padding="@dimen/dm_20dp"
+    >
+
+</com.csjbot.blackgaga.widget.ChatView>
